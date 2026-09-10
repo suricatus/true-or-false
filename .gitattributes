@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Build WebGL publicada em docs/: tratar como binario puro.
+# Se o Git normalizar quebras de linha nesses arquivos, o navegador
+# recusa o .wasm e o jogo carrega em branco.
+*.wasm  binary
+*.data  binary
+*.mem   binary
+*.bundle binary
+*.unityweb binary
+*.br    binary
+*.gz    binary
