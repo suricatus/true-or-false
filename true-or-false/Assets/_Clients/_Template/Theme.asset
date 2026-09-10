@@ -60,20 +60,19 @@ MonoBehaviour:
     - name: Baixa
       minScore: 0
       scoreColor: {r: 0.88, g: 0.22, b: 0.25, a: 1}
-      sprite: {fileID: 0}
-      message: "{0} pontos! Volte para a fila e tente melhorar essa pontua\xE7\xE3o.
-        Eu sei que voc\xEA consegue!"
+      sprite: {fileID: 5514117883123662725, guid: 723f888c23c7374499ae990bcb954e7a, type: 3}
+      message: "Volte para a fila e tente melhorar essa pontua\xE7\xE3o. Eu sei que
+        voc\xEA consegue!"
     - name: Media
       minScore: 301
       scoreColor: {r: 0.98, g: 0.78, b: 0.15, a: 1}
-      sprite: {fileID: 0}
-      message: "{0} pontos! Foi quase, mas eu sei que voc\xEA pode melhorar! Que
-        tal tentar novamente?"
+      sprite: {fileID: -8166626799563281092, guid: e2584dfd1820a384f899d72d83ed6220, type: 3}
+      message: "Foi quase, mas eu sei que voc\xEA pode melhorar! Que tal tentar novamente?"
     - name: Alta
       minScore: 601
       scoreColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
-      sprite: {fileID: 0}
-      message: "{0} PONTOS! Voc\xEA entende muito e mandou muito bem! Parab\xE9ns!"
+      sprite: {fileID: -5052868756172157622, guid: b4df343419bc7214394fc1a502d49793, type: 3}
+      message: "Voc\xEA entende muito e mandou muito bem! Parab\xE9ns!"
   correctSfx: {fileID: 0}
   wrongSfx: {fileID: 0}
   timeoutSfx: {fileID: 0}
