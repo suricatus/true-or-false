@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1",
+  "clientName": "Suricatus (demo)",
+  "questions": [
+    {
+      "id": "seg-01",
+      "statement": "Capacete é obrigatório em toda a área de produção, inclusive nos corredores.",
+      "isTrue": true,
+      "explanation": "A norma interna vale para toda a área produtiva, sem exceção de corredores.",
+      "category": "Segurança",
+      "imageKey": ""
+    },
+    {
+      "id": "seg-02",
+      "statement": "Extintores podem ser usados como apoio para manter portas abertas.",
+      "isTrue": false,
+      "explanation": "Extintores devem ficar livres e sinalizados. Obstruir o acesso é infração grave.",
+      "category": "Segurança",
+      "imageKey": ""
+    },
+    {
+      "id": "rh-01",
+      "statement": "O programa de indicação premia o colaborador mesmo se o indicado não for contratado.",
+      "isTrue": false,
+      "explanation": "A premiação ocorre após a efetivação do indicado no período de experiência.",
+      "category": "RH",
+      "imageKey": ""
+    },
+    {
+      "id": "rh-02",
+      "statement": "As férias podem ser divididas em até três períodos.",
+      "isTrue": true,
+      "explanation": "Desde que um deles tenha ao menos 14 dias e os demais não sejam inferiores a 5 dias.",
+      "category": "RH",
+      "imageKey": ""
+    },
+    {
+      "id": "sus-01",
+      "statement": "Papel plastificado deve ser descartado na lixeira azul, junto com os recicláveis.",
+      "isTrue": false,
+      "explanation": "O plastificado não é reciclável no processo convencional e vai para o rejeito.",
+      "category": "Sustentabilidade",
+      "imageKey": ""
+    },
+    {
+      "id": "sus-02",
+      "statement": "Desligar monitores no fim do expediente reduz consumo mesmo com o computador ligado.",
+      "isTrue": true,
+      "explanation": "O monitor representa parcela relevante do consumo da estação de trabalho.",
+      "category": "Sustentabilidade",
+      "imageKey": ""
+    },
+    {
+      "id": "lgpd-01",
+      "statement": "Compartilhar planilha com CPF de clientes por WhatsApp pessoal é permitido se for entre colegas.",
+      "isTrue": false,
+      "explanation": "Dado pessoal só trafega por canais corporativos aprovados. É violação da LGPD.",
+      "category": "LGPD",
+      "imageKey": ""
+    },
+    {
+      "id": "lgpd-02",
+      "statement": "O titular pode solicitar a exclusão dos seus dados pessoais a qualquer momento.",
+      "isTrue": true,
+      "explanation": "É um direito previsto na LGPD, respeitadas as obrigações legais de guarda.",
+      "category": "LGPD",
+      "imageKey": ""
+    },
+    {
+      "id": "geral-01",
+      "statement": "A empresa foi fundada há mais de 50 anos.",
+      "isTrue": true,
+      "explanation": "Troque esta pergunta pelos marcos da história do cliente.",
+      "category": "Institucional",
+      "imageKey": ""
+    },
+    {
+      "id": "geral-02",
+      "statement": "Todo colaborador precisa registrar ponto, inclusive em regime home office.",
+      "isTrue": true,
+      "explanation": "O registro é obrigatório independentemente do local de trabalho.",
+      "category": "Institucional",
+      "imageKey": ""
+    }
+  ]
+}

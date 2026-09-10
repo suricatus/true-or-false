@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 777a101a33d98a84ebc598ac734661be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4724213928341205109
+    second: Suricatu - Base II_0
+  - first:
+      213: -9182117482960708012
+    second: Suricatu - Base II_1
+  - first:
+      213: -2821978709831373864
+    second: Suricatu - Base II_2
+  - first:
+      213: 6685693199252504308
+    second: Suricatu - Base II_3
+  - first:
+      213: 419650275339730367
+    second: Suricatu - Base II_4
+  - first:
+      213: 117055934285920578
+    second: Suricatu - Base II_5
+  - first:
+      213: 6425621745405056607
+    second: Suricatu - Base II_6
+  - first:
+      213: 2551859936648769030
+    second: Suricatu - Base II_7
+  - first:
+      213: -5182812594835666888
+    second: Suricatu - Base II_8
+  - first:
+      213: 910938810009242522
+    second: Suricatu - Base II_9
+  - first:
+      213: -6656406223915118590
+    second: Suricatu - Base II_10
+  - first:
+      213: -7074966769445533139
+    second: Suricatu - Base II_11
+  - first:
+      213: -4348045969643554194
+    second: Suricatu - Base II_12
+  - first:
+      213: 1568587381944461370
+    second: Suricatu - Base II_13
+  - first:
+      213: 6548535013447798367
+    second: Suricatu - Base II_14
+  - first:
+      213: 8120241110741001046
+    second: Suricatu - Base II_15
+  - first:
+      213: -3522864628503342521
+    second: Suricatu - Base II_16
+  - first:
+      213: 1576189012179251728
+    second: Suricatu - Base II_17
+  - first:
+      213: -3187407965151207056
+    second: Suricatu - Base II_18
+  - first:
+      213: -1321305883172304132
+    second: Suricatu - Base II_19
+  - first:
+      213: -3151109142449124451
+    second: Suricatu - Base II_20
+  - first:
+      213: -2266930773889705605
+    second: Suricatu - Base II_21
+  - first:
+      213: 4226760529468965975
+    second: Suricatu - Base II_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Suricatu - Base II_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1122
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570fab1b987cf8140800000000000000
+      internalID: 4724213928341205109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1236
+        width: 7
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e19365cc0929080800000000000000
+      internalID: -9182117482960708012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_2
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 180
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db29cc905156d8d0800000000000000
+      internalID: -2821978709831373864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_3
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 179
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4feb0bada8a58cc50800000000000000
+      internalID: 6685693199252504308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 136
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdf487b3b5e2d500800000000000000
+      internalID: 419650275339730367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 114
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249b6f580cddf9100800000000000000
+      internalID: 117055934285920578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 110
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d4ebdee46c2950800000000000000
+      internalID: 6425621745405056607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 108
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e208097170a6320800000000000000
+      internalID: 2551859936648769030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 112
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 838466b9763f218b0800000000000000
+      internalID: -5182812594835666888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 100
+        width: 33
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bc7b6750e44ac00800000000000000
+      internalID: 910938810009242522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_10
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 86
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20017d67ec1bf93a0800000000000000
+      internalID: -6656406223915118590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_11
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 114
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a818d353ba0dd90800000000000000
+      internalID: -7074966769445533139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 63
+        width: 37
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ab3504a33a8a3c0800000000000000
+      internalID: -4348045969643554194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_13
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 102
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38a5f3c9edb4c510800000000000000
+      internalID: 1568587381944461370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 112
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e83cb26e111ea50800000000000000
+      internalID: 6548535013447798367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_15
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 114
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653ad307444e0b070800000000000000
+      internalID: 8120241110741001046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 742154a09454c1fc0800000000000000
+      internalID: -3522864628503342521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_17
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 98
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01271d93e8fbfd510800000000000000
+      internalID: 1576189012179251728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_18
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07169e2e75d04c3d0800000000000000
+      internalID: -3187407965151207056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa81e1cc47c9ade0800000000000000
+      internalID: -1321305883172304132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_20
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 100
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b85d32ee20544d0800000000000000
+      internalID: -3151109142449124451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_21
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 77
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7917ebc87e3a80e0800000000000000
+      internalID: -2266930773889705605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suricatu - Base II_22
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 61
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754c3a5ae4878aa30800000000000000
+      internalID: 4226760529468965975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Suricatu - Base II_0: 4724213928341205109
+      Suricatu - Base II_1: -9182117482960708012
+      Suricatu - Base II_10: -6656406223915118590
+      Suricatu - Base II_11: -7074966769445533139
+      Suricatu - Base II_12: -4348045969643554194
+      Suricatu - Base II_13: 1568587381944461370
+      Suricatu - Base II_14: 6548535013447798367
+      Suricatu - Base II_15: 8120241110741001046
+      Suricatu - Base II_16: -3522864628503342521
+      Suricatu - Base II_17: 1576189012179251728
+      Suricatu - Base II_18: -3187407965151207056
+      Suricatu - Base II_19: -1321305883172304132
+      Suricatu - Base II_2: -2821978709831373864
+      Suricatu - Base II_20: -3151109142449124451
+      Suricatu - Base II_21: -2266930773889705605
+      Suricatu - Base II_22: 4226760529468965975
+      Suricatu - Base II_3: 6685693199252504308
+      Suricatu - Base II_4: 419650275339730367
+      Suricatu - Base II_5: 117055934285920578
+      Suricatu - Base II_6: 6425621745405056607
+      Suricatu - Base II_7: 2551859936648769030
+      Suricatu - Base II_8: -5182812594835666888
+      Suricatu - Base II_9: 910938810009242522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
