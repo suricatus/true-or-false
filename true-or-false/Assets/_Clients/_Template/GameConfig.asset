@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Suricatus.TrueOrFalse.Core::Suricatus.TrueOrFalse.Core.GameConfig
   questionsPerRound: 10
   secondsPerQuestion: 10
-  feedbackSeconds: 2
   shuffleQuestions: 1
+  suspenseSeconds: 2
+  revealSeconds: 1.5
+  revealBlinkInterval: 0.18
+  feedbackAutoAdvanceSeconds: 0
+  scoreCountSeconds: 0.6
   pointsPerCorrect: 100
   pointsPerWrong: 0
   pointsPerTimeout: 0

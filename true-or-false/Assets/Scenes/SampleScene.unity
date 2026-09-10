@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 30153195}
   - component: {fileID: 30153194}
   m_Layer: 5
-  m_Name: TitleText
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00066757}
-  m_SizeDelta: {x: 902.34, y: 386.51}
+  m_AnchoredPosition: {x: 0, y: 96.627}
+  m_SizeDelta: {x: 902.34, y: 193.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30153194
 MonoBehaviour:
@@ -176,9 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '100 PONTOS!
-
-    MUITO BEM!'
+  m_text: 100 PONTOS!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}
   m_sharedMaterial: {fileID: -1900174317084116495, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}
@@ -269,13 +267,14 @@ GameObject:
   - component: {fileID: 33549209}
   - component: {fileID: 33549211}
   - component: {fileID: 33549210}
+  - component: {fileID: 33549212}
   m_Layer: 5
   m_Name: AtracaoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &33549209
 RectTransform:
   m_ObjectHideFlags: 0
@@ -337,6 +336,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33549208}
   m_CullTransparentMesh: 1
+--- !u!114 &33549212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33549208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2cdf661e122064488b332bf1189e46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.AttractPanelView
+  background: {fileID: 1195723449}
+  logo: {fileID: 937742527}
+  titleText: {fileID: 752452230}
+  callToActionText: {fileID: 1165016659}
+  blinkSeconds: 1.2
 --- !u!1 &91174210
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,13 +911,14 @@ GameObject:
   - component: {fileID: 355900074}
   - component: {fileID: 355900076}
   - component: {fileID: 355900075}
+  - component: {fileID: 355900077}
   m_Layer: 5
   m_Name: FeedbackPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &355900074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -965,6 +982,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355900073}
   m_CullTransparentMesh: 1
+--- !u!114 &355900077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355900073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e456854d7b1344fbdd66f97c2c01cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.FeedbackPanelView
+  background: {fileID: 1374125169}
+  titleText: {fileID: 232810145}
+  explanationText: {fileID: 270898807}
+  moodImage: {fileID: 1763061899}
+  scoreText: {fileID: 1026099812}
+  pointsDeltaText: {fileID: 1026099812}
+  continueText: {fileID: 476880220}
 --- !u!1 &358822947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,14 +1115,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4255518, g: 0.6292953, b: 0.6886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1378,6 +1414,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &587926944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 587926945}
+  - component: {fileID: 587926946}
+  m_Layer: 0
+  m_Name: GameRunner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &587926945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587926944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587926946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587926944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea8911a7a9ff89418fde955fb894359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.GameRunner
+  config: {fileID: 11400000, guid: a18758eb213855243bf509bd8a3d961b, type: 2}
+  theme: {fileID: 11400000, guid: 85c7cd690c3329f4782952374fc00853, type: 2}
+  attractPanel: {fileID: 33549212}
+  questionPanel: {fileID: 2069532204}
+  feedbackPanel: {fileID: 355900077}
+  resultPanel: {fileID: 1828568900}
+  audioSource: {fileID: 0}
+  shuffleSeed: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1776,143 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667681647}
+  m_CullTransparentMesh: 1
+--- !u!1 &675197558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 675197559}
+  - component: {fileID: 675197561}
+  - component: {fileID: 675197560}
+  m_Layer: 5
+  m_Name: MessageText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &675197559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675197558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1524635729}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -84.043144}
+  m_SizeDelta: {x: 902.34, y: 218.425}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &675197560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675197558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: MUITO BEM!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}
+  m_sharedMaterial: {fileID: -1900174317084116495, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 115
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 115
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &675197561
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675197558}
   m_CullTransparentMesh: 1
 --- !u!1 &718109304
 GameObject:
@@ -2972,14 +3197,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4255518, g: 0.6292953, b: 0.6886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3168,14 +3393,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4255518, g: 0.6292953, b: 0.6886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3300,6 +3525,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 30153193}
+  - {fileID: 675197559}
   m_Father: {fileID: 1828568897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3500,7 +3726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00013208}
+  m_AnchoredPosition: {x: 0, y: -0.0001335144}
   m_SizeDelta: {x: 150, y: 76.611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746431782
@@ -3689,13 +3915,14 @@ GameObject:
   - component: {fileID: 1828568897}
   - component: {fileID: 1828568899}
   - component: {fileID: 1828568898}
+  - component: {fileID: 1828568900}
   m_Layer: 5
   m_Name: ResultadoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1828568897
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3758,6 +3985,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828568896}
   m_CullTransparentMesh: 1
+--- !u!114 &1828568900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828568896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e11b6ee88891d449d4d230ba27abaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.ResultPanelView
+  background: {fileID: 2057737092}
+  titleText: {fileID: 1127919354}
+  scoreText: {fileID: 30153194}
+  messageText: {fileID: 675197560}
+  tierImage: {fileID: 171829041}
+  homeButton: {fileID: 139502885}
 --- !u!1 &1838115182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,14 +4478,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4255518, g: 0.6292953, b: 0.6886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4269,6 +4514,7 @@ GameObject:
   - component: {fileID: 2069532201}
   - component: {fileID: 2069532203}
   - component: {fileID: 2069532202}
+  - component: {fileID: 2069532204}
   m_Layer: 5
   m_Name: PerguntasPanel
   m_TagString: Untagged
@@ -4339,6 +4585,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069532200}
   m_CullTransparentMesh: 1
+--- !u!114 &2069532204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069532200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af5e74876780a141a243614c22fa96b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.QuestionPanelView
+  background: {fileID: 363520756}
+  logo: {fileID: 651807698}
+  timerFill: {fileID: 91174212}
+  timerText: {fileID: 1922888934}
+  timerRoot: {fileID: 1960179039}
+  scoreText: {fileID: 1746431782}
+  questionText: {fileID: 810498468}
+  questionImage: {fileID: 0}
+  trueButton:
+    button: {fileID: 1207223207}
+    image: {fileID: 1207223208}
+    label: {fileID: 1950531421}
+  falseButton:
+    button: {fileID: 1738954686}
+    image: {fileID: 1738954687}
+    label: {fileID: 718109306}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4347,3 +4621,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1044231100}
   - {fileID: 1040264900}
+  - {fileID: 587926945}

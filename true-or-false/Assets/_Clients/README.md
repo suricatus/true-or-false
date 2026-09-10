@@ -8,11 +8,15 @@ um arquivo do `_Core`, é sinal de que uma regra nova deve virar configuração.
 
 1. Duplique `_Clients/_Template/` e renomeie para o nome do cliente.
 2. **Regras** — abra o `GameConfig` da pasta e ajuste nº de perguntas, tempo,
-   pontuação e o timeout de inatividade do totem.
-3. **Marca** — abra o `Theme` e troque logo, cores, fontes, sprites dos botões,
-   textos de tela e sons.
+   ritmo da resposta, pontuação e o timeout de inatividade do totem.
+3. **Marca** — abra o `Theme` e troque logo, cores, fontes, sprites e **todos** os
+   textos de tela, incluindo as faixas de pontuação do resultado.
 4. **Conteúdo** — edite `Assets/StreamingAssets/Suricatus/questions.json`.
-5. Rode os testes (`Window > General > Test Runner > EditMode`) antes de gerar o build.
+5. No `GameRunner` da cena, troque `Config` e `Theme` pelos assets do cliente novo.
+6. Rode os testes (`Window > General > Test Runner > EditMode`) antes de gerar o build.
+
+Para saber qual objeto da cena vai em qual campo, veja
+[`_Presentation/README.md`](../_Presentation/README.md).
 
 ## O arquivo de perguntas
 

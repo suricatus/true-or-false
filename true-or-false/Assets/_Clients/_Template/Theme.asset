@@ -14,29 +14,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: Suricatus.TrueOrFalse.Presentation::Suricatus.TrueOrFalse.Presentation.ThemeConfig
   clientName: Suricatus
   logo: {fileID: -1095226124128532051, guid: 5b04d374dde17704f851cefab1c169a4, type: 3}
-  background: {fileID: 0}
-  primary: {r: 0.1, g: 0.45, b: 0.9, a: 1}
-  secondary: {r: 0.95, g: 0.6, b: 0.1, a: 1}
-  surface: {r: 1, g: 1, b: 1, a: 1}
-  textOnSurface: {r: 0.1, g: 0.1, b: 0.12, a: 1}
-  correct: {r: 0.15, g: 0.7, b: 0.35, a: 1}
-  wrong: {r: 0.85, g: 0.2, b: 0.25, a: 1}
   titleFont: {fileID: 11400000, guid: e1b3a49950655da45ae292520d2bb81f, type: 2}
   bodyFont: {fileID: 11400000, guid: 520887a24a8df8348b4325958881e429, type: 2}
-  trueButtonSprite: {fileID: 21300000, guid: e8eeb25a388a8ec4faf52b6d6ed37454, type: 3}
-  falseButtonSprite: {fileID: 21300000, guid: e8eeb25a388a8ec4faf52b6d6ed37454, type: 3}
-  trueLabel: VERDADEIRO
-  falseLabel: FALSO
-  attractTitle: VERDADEIRO OU FALSO?
-  attractCallToAction: Toque ne tela para iniciar
-  correctFeedback: Acertou!
-  wrongFeedback: Errou!
-  timeoutFeedback: Tempo esgotado!
-  resultTitle: "Sua pontua\xE7\xE3o"
-  playAgainLabel: Jogar de novo
+  attract:
+    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    title: VERDADEIRO OU FALSO?
+    callToAction: TOQUE NA TELA PARA INICIAR
+  question:
+    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    trueLabel: VERDADEIRO
+    falseLabel: FALSO
+    idleColor: {r: 1, g: 1, b: 1, a: 1}
+    selectedColor: {r: 0.85, g: 0.85, b: 0.85, a: 1}
+    revealColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
+    idleSprite: {fileID: 21300000, guid: e8eeb25a388a8ec4faf52b6d6ed37454, type: 3}
+    selectedSprite: {fileID: 21300000, guid: e8eeb25a388a8ec4faf52b6d6ed37454, type: 3}
+    revealSprite: {fileID: 21300000, guid: e8eeb25a388a8ec4faf52b6d6ed37454, type: 3}
+    scoreFormat: '{0}'
+    timerFormat: '{0}'
+    questionImages: []
+    timerNormalColor: {r: 1, g: 1, b: 1, a: 1}
+    timerUrgentColor: {r: 0.9, g: 0.2, b: 0.2, a: 1}
+    urgentThresholdSeconds: 3
+  feedback:
+    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    correctTitle: MANDOU BEM!
+    correctSprite: {fileID: -8166626799563281092, guid: e2584dfd1820a384f899d72d83ed6220, type: 3}
+    correctColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
+    wrongTitle: "QUE PENA VOC\xCA ERROU"
+    wrongSprite: {fileID: 4724213928341205109, guid: 777a101a33d98a84ebc598ac734661be, type: 3}
+    wrongColor: {r: 0.88, g: 0.22, b: 0.25, a: 1}
+    timeoutTitle: ACABOU O TEMPO!
+    timeoutSprite: {fileID: 21300000, guid: a3c77fccdd07ead4f9c23609116517cc, type: 3}
+    pointsGainedFormat: +{0} PONTOS!
+    pointsLostFormat: -{0} PONTOS
+    noPointsText: SEM PONTOS
+    emptyExplanationFallback: 
+    continueLabel: TOQUE NA TELA PARA CONTINUAR
+  result:
+    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    title: O SEU RESULTADO FOI DE...
+    scoreFormat: '{0} PONTOS!'
+    colorScoreInsideMessage: 1
+    tiers:
+    - name: Baixa
+      minScore: 0
+      scoreColor: {r: 0.88, g: 0.22, b: 0.25, a: 1}
+      sprite: {fileID: 0}
+      message: "{0} pontos! Volte para a fila e tente melhorar essa pontua\xE7\xE3o.
+        Eu sei que voc\xEA consegue!"
+    - name: Media
+      minScore: 301
+      scoreColor: {r: 0.98, g: 0.78, b: 0.15, a: 1}
+      sprite: {fileID: 0}
+      message: "{0} pontos! Foi quase, mas eu sei que voc\xEA pode melhorar! Que
+        tal tentar novamente?"
+    - name: Alta
+      minScore: 601
+      scoreColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
+      sprite: {fileID: 0}
+      message: "{0} PONTOS! Voc\xEA entende muito e mandou muito bem! Parab\xE9ns!"
   correctSfx: {fileID: 0}
   wrongSfx: {fileID: 0}
   timeoutSfx: {fileID: 0}
-  tickSfx: {fileID: 0}
-  music: {fileID: 0}
-  questionImages: []
+  tapSfx: {fileID: 0}

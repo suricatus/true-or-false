@@ -1,85 +1,85 @@
 {
   "schemaVersion": "1",
-  "clientName": "Suricatus (demo)",
+  "clientName": "Corinthians (demo)",
   "questions": [
     {
-      "id": "seg-01",
-      "statement": "Capacete é obrigatório em toda a área de produção, inclusive nos corredores.",
+      "id": "cor-01",
+      "statement": "O Corinthians foi fundado em 1910, no bairro do Bom Retiro, em São Paulo.",
       "isTrue": true,
-      "explanation": "A norma interna vale para toda a área produtiva, sem exceção de corredores.",
-      "category": "Segurança",
+      "explanation": "A fundação foi em 1º de setembro de 1910, por um grupo de operários do Bom Retiro. O maior rival, o Palmeiras, só surgiria em 1914.",
+      "category": "História",
       "imageKey": ""
     },
     {
-      "id": "seg-02",
-      "statement": "Extintores podem ser usados como apoio para manter portas abertas.",
+      "id": "cor-02",
+      "statement": "O nome do clube foi inspirado na cidade de Corinto, na Grécia.",
       "isTrue": false,
-      "explanation": "Extintores devem ficar livres e sinalizados. Obstruir o acesso é infração grave.",
-      "category": "Segurança",
+      "explanation": "A inspiração veio do Corinthian Football Club, time inglês que excursionou pelo Brasil em 1910 e encantou os fundadores.",
+      "category": "História",
       "imageKey": ""
     },
     {
-      "id": "rh-01",
-      "statement": "O programa de indicação premia o colaborador mesmo se o indicado não for contratado.",
+      "id": "cor-03",
+      "statement": "O Corinthians já venceu a Libertadores mais de uma vez.",
       "isTrue": false,
-      "explanation": "A premiação ocorre após a efetivação do indicado no período de experiência.",
-      "category": "RH",
+      "explanation": "O título veio uma única vez, em 2012, com a campanha invicta que terminou na vitória sobre o Boca Juniors na final.",
+      "category": "Títulos",
       "imageKey": ""
     },
     {
-      "id": "rh-02",
-      "statement": "As férias podem ser divididas em até três períodos.",
+      "id": "cor-04",
+      "statement": "O Corinthians é bicampeão mundial, com títulos em 2000 e 2012.",
       "isTrue": true,
-      "explanation": "Desde que um deles tenha ao menos 14 dias e os demais não sejam inferiores a 5 dias.",
-      "category": "RH",
+      "explanation": "Em 2000 venceu o Vasco nos pênaltis, no primeiro Mundial de Clubes da FIFA. Em 2012 bateu o Chelsea por 1 a 0, com gol de Guerrero.",
+      "category": "Títulos",
       "imageKey": ""
     },
     {
-      "id": "sus-01",
-      "statement": "Papel plastificado deve ser descartado na lixeira azul, junto com os recicláveis.",
+      "id": "cor-05",
+      "statement": "O Corinthians nunca foi rebaixado para a Série B do Campeonato Brasileiro.",
       "isTrue": false,
-      "explanation": "O plastificado não é reciclável no processo convencional e vai para o rejeito.",
-      "category": "Sustentabilidade",
+      "explanation": "O clube caiu em 2007, disputou a Série B em 2008 e subiu como campeão daquela edição.",
+      "category": "História",
       "imageKey": ""
     },
     {
-      "id": "sus-02",
-      "statement": "Desligar monitores no fim do expediente reduz consumo mesmo com o computador ligado.",
+      "id": "cor-06",
+      "statement": "A Neo Química Arena sediou o jogo de abertura da Copa do Mundo de 2014.",
       "isTrue": true,
-      "explanation": "O monitor representa parcela relevante do consumo da estação de trabalho.",
-      "category": "Sustentabilidade",
+      "explanation": "Foi lá que o Brasil venceu a Croácia por 3 a 1, em 12 de junho de 2014, na estreia do torneio.",
+      "category": "Estádio",
       "imageKey": ""
     },
     {
-      "id": "lgpd-01",
-      "statement": "Compartilhar planilha com CPF de clientes por WhatsApp pessoal é permitido se for entre colegas.",
+      "id": "cor-07",
+      "statement": "O mascote do Corinthians é um leão.",
       "isTrue": false,
-      "explanation": "Dado pessoal só trafega por canais corporativos aprovados. É violação da LGPD.",
-      "category": "LGPD",
+      "explanation": "O mascote é o Mosqueteiro, criado nos anos 1950 e inspirado no lema \"um por todos, todos por um\".",
+      "category": "Curiosidades",
       "imageKey": ""
     },
     {
-      "id": "lgpd-02",
-      "statement": "O titular pode solicitar a exclusão dos seus dados pessoais a qualquer momento.",
+      "id": "cor-08",
+      "statement": "A Democracia Corinthiana, liderada por Sócrates nos anos 1980, deixava o elenco votar decisões do clube.",
       "isTrue": true,
-      "explanation": "É um direito previsto na LGPD, respeitadas as obrigações legais de guarda.",
-      "category": "LGPD",
+      "explanation": "Entre 1982 e 1985, jogadores e funcionários votavam desde a concentração antes dos jogos até contratações. Virou símbolo de resistência à ditadura militar.",
+      "category": "História",
       "imageKey": ""
     },
     {
-      "id": "geral-01",
-      "statement": "A empresa foi fundada há mais de 50 anos.",
+      "id": "cor-09",
+      "statement": "O clube passou 23 anos sem títulos, num jejum que só terminou em 1977.",
       "isTrue": true,
-      "explanation": "Troque esta pergunta pelos marcos da história do cliente.",
-      "category": "Institucional",
+      "explanation": "O jejum começou em 1954 e acabou no Paulistão de 1977, contra a Ponte Preta, diante de um Morumbi lotado.",
+      "category": "História",
       "imageKey": ""
     },
     {
-      "id": "geral-02",
-      "statement": "Todo colaborador precisa registrar ponto, inclusive em regime home office.",
-      "isTrue": true,
-      "explanation": "O registro é obrigatório independentemente do local de trabalho.",
-      "category": "Institucional",
+      "id": "cor-10",
+      "statement": "Ronaldo Fenômeno nunca vestiu a camisa do Corinthians.",
+      "isTrue": false,
+      "explanation": "Ronaldo jogou no clube de 2009 a 2011 e foi campeão da Copa do Brasil logo no primeiro ano.",
+      "category": "Ídolos",
       "imageKey": ""
     }
   ]
