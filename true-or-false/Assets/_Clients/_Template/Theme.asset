@@ -42,7 +42,7 @@ MonoBehaviour:
     correctSprite: {fileID: -8166626799563281092, guid: e2584dfd1820a384f899d72d83ed6220, type: 3}
     correctColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
     wrongTitle: "QUE PENA VOC\xCA ERROU"
-    wrongSprite: {fileID: 4724213928341205109, guid: 777a101a33d98a84ebc598ac734661be, type: 3}
+    wrongSprite: {fileID: 5514117883123662725, guid: 723f888c23c7374499ae990bcb954e7a, type: 3}
     wrongColor: {r: 0.88, g: 0.22, b: 0.25, a: 1}
     timeoutTitle: ACABOU O TEMPO!
     timeoutSprite: {fileID: 21300000, guid: a3c77fccdd07ead4f9c23609116517cc, type: 3}
