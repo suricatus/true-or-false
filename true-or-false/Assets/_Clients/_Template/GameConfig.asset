@@ -26,4 +26,6 @@ MonoBehaviour:
   bonusPointsPerSecondLeft: 0
   idleResetSeconds: 45
   questionsFile: Suricatus/questions.json
-  fallbackCatalog: {fileID: 0}
+  fallbackCatalog: {fileID: 4900000, guid: 6f4a8db1e08a4f89a26f360a06ba7191, type: 3}
+  externalContentFolder: 
+  writeLoadReport: 1

@@ -193,30 +193,48 @@ namespace Suricatus.TrueOrFalse.Presentation
         {
             public Button button;
 
-            [Tooltip("Image pintada nas trocas de estado. Se vazio, usa o Target Graphic do Button.")]
+            [Tooltip("Image pintada nas trocas de estado. Se vazio, usa o Target Graphic do Button. " +
+                     "Num prefab em camadas (Outer/Shadow/Mask/Front), aponte para a Image da FRENTE: " +
+                     "e ela que da a cor do botao.")]
             public Image image;
 
             [Tooltip("Texto do botao (VERDADEIRO / FALSO).")]
             public TMP_Text label;
 
             private Selectable.Transition _originalTransition;
+
+            // Aparencia que veio do prefab. Sem isso, o repouso seria a cor do tema e os dois
+            // botoes ficariam iguais — era assim que o verde e o vermelho do prefab viravam
+            // um circulo branco em jogo.
+            private Sprite _prefabSprite;
+            private Color _prefabColor = Color.white;
+
             private bool _cached;
 
             public void Cache()
             {
-                if (button == null) return;
-                if (image == null) image = button.targetGraphic as Image;
-                _originalTransition = button.transition;
+                if (image == null && button != null) image = button.targetGraphic as Image;
+
+                if (image != null)
+                {
+                    _prefabSprite = image.sprite;
+                    _prefabColor = image.color;
+                }
+
+                if (button != null) _originalTransition = button.transition;
                 _cached = true;
             }
 
             /// <summary>
             /// Alinha as cores do Button com as do tema, para que os dois nao disputem
             /// a mesma Image. Chamado uma vez, na inicializacao.
+            ///
+            /// No modo Prefab nao toca em nada: o ColorBlock que veio do prefab continua valendo.
             /// </summary>
             public void ApplyTheme(ThemeConfig.QuestionTheme theme)
             {
                 if (button == null) return;
+                if (theme.buttonVisuals != ThemeConfig.ButtonVisualSource.Theme) return;
 
                 var colors = button.colors;
                 colors.normalColor = theme.idleColor;
@@ -252,10 +270,45 @@ namespace Suricatus.TrueOrFalse.Presentation
                 SetIdle(theme);
             }
 
-            public void SetIdle(ThemeConfig.QuestionTheme theme) => Paint(theme.idleColor, theme.idleSprite);
-            public void SetSelected(ThemeConfig.QuestionTheme theme) => Paint(theme.selectedColor, theme.selectedSprite);
-            public void SetReveal(ThemeConfig.QuestionTheme theme) => Paint(theme.revealColor, theme.revealSprite);
+            public void SetIdle(ThemeConfig.QuestionTheme theme)
+                => Paint(IdleColor(theme), IdleSprite(theme));
 
+            public void SetSelected(ThemeConfig.QuestionTheme theme)
+                => Paint(SelectedColor(theme), FromPrefab(theme) ? _prefabSprite : theme.selectedSprite);
+
+            public void SetReveal(ThemeConfig.QuestionTheme theme)
+                => Paint(RevealColor(theme), FromPrefab(theme) ? _prefabSprite : theme.revealSprite);
+
+            private static bool FromPrefab(ThemeConfig.QuestionTheme theme)
+                => theme.buttonVisuals == ThemeConfig.ButtonVisualSource.Prefab;
+
+            private Color IdleColor(ThemeConfig.QuestionTheme theme)
+                => FromPrefab(theme) ? _prefabColor : theme.idleColor;
+
+            private Sprite IdleSprite(ThemeConfig.QuestionTheme theme)
+                => FromPrefab(theme) ? _prefabSprite : theme.idleSprite;
+
+            // Os destaques saem da propria cor do botao: escurecer e clarear funcionam em
+            // qualquer cor, enquanto uma cor fixa de revelacao desapareceria num botao que
+            // ja e verde.
+            private Color SelectedColor(ThemeConfig.QuestionTheme theme)
+                => FromPrefab(theme) ? Shade(_prefabColor, 0f, theme.selectedDarken) : theme.selectedColor;
+
+            private Color RevealColor(ThemeConfig.QuestionTheme theme)
+                => FromPrefab(theme) ? Shade(_prefabColor, 1f, theme.revealBrighten) : theme.revealColor;
+
+            /// <summary>Aproxima a cor do preto (target 0) ou do branco (target 1), preservando o alfa.</summary>
+            private static Color Shade(Color color, float target, float amount)
+            {
+                float t = Mathf.Clamp01(amount);
+                return new Color(
+                    Mathf.Lerp(color.r, target, t),
+                    Mathf.Lerp(color.g, target, t),
+                    Mathf.Lerp(color.b, target, t),
+                    color.a);
+            }
+
+            /// <summary>Pinta a Image. Sprite nulo nao apaga o que ja esta la.</summary>
             private void Paint(Color color, Sprite sprite)
             {
                 if (image == null) return;

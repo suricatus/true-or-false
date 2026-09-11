@@ -27,7 +27,9 @@ namespace Suricatus.TrueOrFalse.Presentation
         [Tooltip("Pontuacao total, contada de forma animada.")]
         [SerializeField] private TMP_Text scoreText;
 
-        [Tooltip("Pontos ganhos ou perdidos nesta pergunta (+100). Opcional.")]
+        [Tooltip("Pontos ganhos ou perdidos nesta pergunta (+100). Opcional. " +
+                 "Precisa ser um texto PROPRIO: se voce apontar para o mesmo texto da pontuacao, " +
+                 "este campo e ignorado.")]
         [SerializeField] private TMP_Text pointsDeltaText;
 
         [Header("Continuar")]
@@ -89,7 +91,9 @@ namespace Suricatus.TrueOrFalse.Presentation
                 explanationText.enabled = !string.IsNullOrWhiteSpace(explanation);
             }
 
-            if (pointsDeltaText != null)
+            // Quando os dois campos apontam para o MESMO texto na cena, a contagem da pontuacao
+            // vence logo em seguida: escrever aqui so produziria um piscar de "+100 PONTOS".
+            if (pointsDeltaText != null && pointsDeltaText != scoreText)
             {
                 int points = outcome.PointsAwarded;
                 pointsDeltaText.text = points > 0 ? string.Format(theme.pointsGainedFormat, points)

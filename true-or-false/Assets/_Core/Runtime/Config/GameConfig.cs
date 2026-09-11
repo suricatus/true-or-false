@@ -53,6 +53,16 @@ namespace Suricatus.TrueOrFalse.Core
         [Tooltip("Banco embutido usado se o arquivo externo faltar ou estiver invalido. O jogo nunca fica sem conteudo no evento.")]
         public TextAsset fallbackCatalog;
 
+        [Header("Troca de conteudo no evento")]
+        [Tooltip("Pasta gravavel consultada ANTES do arquivo do build. Deixe vazio para usar a pasta de " +
+                 "dados do app (Application.persistentDataPath), que e sempre gravavel e nao pede permissao. " +
+                 "E por aqui que se troca as perguntas no totem sem gerar um APK novo.")]
+        public string externalContentFolder = "";
+
+        [Tooltip("Grava um relatorio de carga na pasta externa, dizendo qual arquivo entrou em uso e por que. " +
+                 "No totem e a unica forma de conferir a troca sem conectar um PC. Deixe ligado.")]
+        public bool writeLoadReport = true;
+
         /// <summary>
         /// Converte para os parametros do nucleo. O tempo de feedback vai zerado de proposito:
         /// a coreografia (suspense, revelacao e tela de feedback) e responsabilidade da apresentacao,

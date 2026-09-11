@@ -36,6 +36,21 @@ namespace Suricatus.TrueOrFalse.Presentation
 
         // ------------------------------------------------------------------
 
+        /// <summary>
+        /// Quem manda na aparencia dos botoes de resposta.
+        ///
+        /// O padrao e <see cref="Prefab"/> porque o visual dos botoes normalmente vem de um prefab
+        /// proprio do cliente: o tema nao deve apagar o que foi montado na cena.
+        /// </summary>
+        public enum ButtonVisualSource
+        {
+            /// <summary>O prefab/cena manda. O tema nunca troca o sprite nem a cor de repouso.</summary>
+            Prefab = 0,
+
+            /// <summary>O tema manda. Pinta os dois botoes com as cores e os sprites do asset.</summary>
+            Theme = 1,
+        }
+
         [Serializable]
         public class AttractTheme
         {
@@ -54,6 +69,21 @@ namespace Suricatus.TrueOrFalse.Presentation
             public string trueLabel = "VERDADEIRO";
             public string falseLabel = "FALSO";
 
+            [Tooltip("De onde sai a aparencia dos botoes. " +
+                     "PREFAB: o repouso e exatamente o sprite e a cor que estao no prefab/cena, e os " +
+                     "destaques saem dessa mesma cor. Use quando os botoes sao prefabs seus: um botao " +
+                     "verde continua verde e um vermelho continua vermelho. " +
+                     "TEMA: o tema pinta os dois botoes com as cores e os sprites de 'modo Tema'.")]
+            public ButtonVisualSource buttonVisuals = ButtonVisualSource.Prefab;
+
+            [Header("Botoes - modo Prefab")]
+            [Tooltip("Quanto o botao escolhido escurece durante o suspense. 0 = nao muda.")]
+            [Range(0f, 1f)] public float selectedDarken = 0.3f;
+            [Tooltip("Quanto o botao da resposta CERTA clareia ao piscar. 0 = nao muda. " +
+                     "E o clarao, e nao uma cor fixa, que faz o piscar aparecer mesmo num botao ja verde.")]
+            [Range(0f, 1f)] public float revealBrighten = 0.7f;
+
+            [Header("Botoes - modo Tema")]
             [Tooltip("Cor de repouso do botao.")]
             public Color idleColor = Color.white;
             [Tooltip("Cor do botao que o jogador escolheu, mantida durante o suspense.")]

@@ -17,13 +17,16 @@ MonoBehaviour:
   titleFont: {fileID: 11400000, guid: e1b3a49950655da45ae292520d2bb81f, type: 2}
   bodyFont: {fileID: 11400000, guid: 520887a24a8df8348b4325958881e429, type: 2}
   attract:
-    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     title: VERDADEIRO OU FALSO?
     callToAction: TOQUE NA TELA PARA INICIAR
   question:
-    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     trueLabel: VERDADEIRO
     falseLabel: FALSO
+    buttonVisuals: 0
+    selectedDarken: 0.3
+    revealBrighten: 0.7
     idleColor: {r: 1, g: 1, b: 1, a: 1}
     selectedColor: {r: 0.85, g: 0.85, b: 0.85, a: 1}
     revealColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
@@ -37,7 +40,7 @@ MonoBehaviour:
     timerUrgentColor: {r: 0.9, g: 0.2, b: 0.2, a: 1}
     urgentThresholdSeconds: 3
   feedback:
-    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     correctTitle: MANDOU BEM!
     correctSprite: {fileID: -8166626799563281092, guid: e2584dfd1820a384f899d72d83ed6220, type: 3}
     correctColor: {r: 0.15, g: 0.78, b: 0.35, a: 1}
@@ -52,7 +55,7 @@ MonoBehaviour:
     emptyExplanationFallback: 
     continueLabel: TOQUE NA TELA PARA CONTINUAR
   result:
-    background: {fileID: 7619023750601271839, guid: c25b4bf0bb06e294ebebdd270cba2a4a, type: 3}
+    background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     title: O SEU RESULTADO FOI DE...
     scoreFormat: '{0} PONTOS!'
     colorScoreInsideMessage: 1
