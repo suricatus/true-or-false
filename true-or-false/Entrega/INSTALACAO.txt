@@ -1,0 +1,282 @@
+===========================================================
+  VERDADEIRO OU FALSO - PROCON-RJ
+  Guia de instalacao nos totens (Windows)
+  Suricatus Games
+===========================================================
+
+Este guia serve para os 5 totens. O procedimento e o mesmo em
+todos; muda apenas UM arquivo, no passo 5.
+
+Leia uma vez inteiro antes de comecar. A instalacao de cada
+totem leva cerca de 10 minutos.
+
+Nao precisa de internet para instalar nem para jogar.
+
+
+-----------------------------------------------------------
+O QUE VEM NESTE PACOTE
+-----------------------------------------------------------
+
+  Jogo\                 o jogo (pasta inteira)
+  totens\               5 arquivos de identificacao, um por totem
+  INSTALACAO.txt        este guia
+
+Dentro da pasta "Jogo" o que voce abre e o arquivo:
+
+  true-or-false.exe
+
+Ao lado dele existem a pasta "true-or-false_Data" e outras
+pastas de sistema. Elas fazem parte do jogo.
+
+
+-----------------------------------------------------------
+PASSO 1 - COPIAR O JOGO
+-----------------------------------------------------------
+
+Copie a pasta "Jogo" inteira para o totem. Pode ser em
+qualquer lugar; sugestao:
+
+  C:\Suricatus\Jogo
+
+A pasta de DADOS do jogo e sempre C:\Suricatus\Dados,
+independente de onde o jogo for colocado. E la que ficam os
+arquivos do relatorio, e ela aparece sozinha no passo 4.
+
+IMPORTANTE: copie a PASTA INTEIRA. O arquivo true-or-false.exe
+sozinho nao funciona - ele precisa dos arquivos que estao ao
+lado dele.
+
+
+-----------------------------------------------------------
+PASSO 2 - GIRAR A TELA PARA VERTICAL
+-----------------------------------------------------------
+
+O jogo foi feito para tela em pe. Com a tela deitada ele abre
+espremido no meio, com faixas cinzas dos lados.
+
+  Configuracoes > Sistema > Tela > Orientacao da tela
+  Escolha: Retrato
+
+A imagem vai girar. Confirme a alteracao.
+
+Se o totem estiver com duas telas ligadas, deixe ativa apenas
+a tela do totem antes de girar.
+
+
+-----------------------------------------------------------
+PASSO 3 - IMPEDIR QUE O TOTEM DURMA
+-----------------------------------------------------------
+
+E o problema mais comum em evento: o totem apaga sozinho no
+meio do dia e parece quebrado.
+
+  Configuracoes > Sistema > Energia e bateria > Tela e suspensao
+
+  Desligar a tela apos ......... Nunca
+  Colocar em suspensao apos .... Nunca
+
+Desative tambem o protetor de tela:
+
+  Configuracoes > Personalizacao > Tela de bloqueio >
+  Protecao de tela > (Nenhuma)
+
+E evite que o Windows reinicie sozinho no meio do evento:
+
+  Configuracoes > Windows Update > Opcoes avancadas >
+  Horario ativo (ou pause as atualizacoes ate depois do evento)
+
+
+-----------------------------------------------------------
+PASSO 4 - PRIMEIRA ABERTURA
+-----------------------------------------------------------
+
+Abra true-or-false.exe com dois cliques.
+
+>>> O WINDOWS PODE EXIBIR UM AVISO AZUL:
+    "O Windows protegeu o computador"
+
+    Isso e normal e NAO significa virus. Acontece com
+    qualquer programa novo que nao passou pela loja da
+    Microsoft.
+
+    Clique em "Mais informacoes" e depois no botao
+    "Executar assim mesmo".
+
+O jogo abre em tela cheia. Feche com ALT + F4.
+
+Essa primeira abertura cria a pasta C:\Suricatus\Dados, onde
+ficam os dados do evento.
+
+
+-----------------------------------------------------------
+PASSO 5 - IDENTIFICAR O TOTEM  (UNICO PASSO DIFERENTE)
+-----------------------------------------------------------
+
+Cada totem precisa de um nome proprio, senao no fim do evento
+nao ha como saber qual relatorio veio de qual aparelho.
+
+Na pasta "totens" deste pacote ha 5 arquivos:
+
+  totem-01.txt   totem-02.txt   totem-03.txt
+  totem-04.txt   totem-05.txt
+
+Copie UM deles - apenas um, diferente em cada aparelho - para
+a pasta de dados do jogo:
+
+  C:\Suricatus\Dados
+
+  (Se essa pasta nao existir, e porque o passo 4 nao foi
+  feito. Abra o jogo uma vez e ela aparece sozinha. Se mesmo
+  assim nao aparecer, crie a pasta na mao com esse nome
+  exato.)
+
+RENOMEIE o arquivo copiado para exatamente:
+
+  totem.txt
+
+  (Se o Windows estiver escondendo as extensoes, ele aparece
+  so como "totem". Cuidado para nao ficar "totem.txt.txt".)
+
+No totem 1 use o totem-01.txt, no totem 2 o totem-02.txt, e
+assim por diante. Anote em qual aparelho fisico foi cada um.
+
+O jogo le esse nome ao ABRIR. Se o arquivo for colocado com o
+jogo ja aberto, feche e abra de novo.
+
+
+-----------------------------------------------------------
+PASSO 6 - TESTE
+-----------------------------------------------------------
+
+Abra o jogo e jogue UMA partida inteira, ate a tela de
+resultado.
+
+Depois abra a pasta C:\Suricatus\Dados e confirme que
+apareceram dois arquivos com o nome do totem, por exemplo:
+
+  partidas-totem-01.csv
+  respostas-totem-01.csv
+
+Se o nome estiver diferente do esperado (por exemplo
+"partidas-totem-a3f91c.csv"), o passo 5 nao deu certo:
+confira se o arquivo se chama exatamente "totem.txt" e
+reabra o jogo.
+
+>>> APAGUE os dois arquivos .csv depois do teste.
+    Se ficarem, essa partida de teste entra no relatorio
+    final como se fosse publico.
+
+
+-----------------------------------------------------------
+PASSO 7 - ABERTURA AUTOMATICA (recomendado)
+-----------------------------------------------------------
+
+Para o totem voltar sozinho caso falte energia:
+
+  1. Clique com o botao direito em true-or-false.exe >
+     "Mostrar mais opcoes" > "Enviar para" >
+     "Area de trabalho (criar atalho)"
+  2. Aperte a tecla Windows + R
+  3. Digite:  shell:startup   e de OK
+  4. Arraste o atalho da area de trabalho para essa pasta
+
+Para o jogo abrir sozinho de verdade, o Windows precisa
+entrar direto na area de trabalho. Se a maquina pedir senha
+ao ligar, alguem tera que digitar a senha antes de o jogo
+aparecer.
+
+
+-----------------------------------------------------------
+DURANTE O EVENTO
+-----------------------------------------------------------
+
+Nada a fazer. O jogo volta sozinho para a tela inicial quando
+ninguem esta jogando.
+
+NAO ABRA os arquivos .csv no Excel enquanto o jogo estiver
+rodando. O Windows trava o arquivo e as partidas daquele
+periodo se perdem. Para conferir, copie o arquivo para a area
+de trabalho e abra a copia.
+
+Se o totem travar ou for desligado, basta abrir o jogo de
+novo. Nenhuma partida ja registrada se perde.
+
+Se houver Wi-Fi no local, o totem tambem envia as partidas
+para uma planilha de acompanhamento. Isso e opcional: sem
+internet o jogo funciona igual e nada se perde - os arquivos
+locais continuam sendo a fonte oficial do relatorio.
+
+
+-----------------------------------------------------------
+NO FIM DO EVENTO - IMPORTANTE
+-----------------------------------------------------------
+
+Em CADA UM dos 5 totens, copie os dois arquivos .csv da pasta
+
+  C:\Suricatus\Dados
+
+para um pen drive. Serao 10 arquivos no total (2 por totem).
+Os nomes ja sao diferentes entre si, entao podem ir todos
+para a mesma pasta sem risco de um sobrescrever o outro.
+
+Nao renomeie os arquivos: o nome carrega o totem.
+
+Envie esses 10 arquivos para a Suricatus. Sao eles que geram
+o relatorio final da acao.
+
+NAO apague os arquivos dos totens antes de confirmar que a
+copia chegou.
+
+
+-----------------------------------------------------------
+PROBLEMAS COMUNS
+-----------------------------------------------------------
+
+O jogo abre deitado, com faixas cinzas dos lados
+  A tela nao foi girada. Refaca o passo 2.
+
+O Windows bloqueia o programa
+  Normal em programa novo. Passo 4: "Mais informacoes" >
+  "Executar assim mesmo".
+
+Dois cliques e nao acontece nada
+  Provavelmente so o true-or-false.exe foi copiado, sem a
+  pasta. Refaca o passo 1 copiando a pasta inteira.
+
+A pasta C:\Suricatus\Dados nao aparece
+  Crie a pasta na mao com esse nome exato e abra o jogo de
+  novo. Se o Windows reclamar de permissao para criar pasta
+  em C:, clique com o botao direito no jogo e escolha
+  "Executar como administrador" uma vez.
+
+A tela apaga sozinha durante o evento
+  Passo 3 nao foi feito nesse aparelho.
+
+Nao aparecem os arquivos .csv
+  Confira se alguma partida foi jogada ATE A TELA DE
+  RESULTADO. O arquivo de partidas so e gravado quando a
+  rodada termina.
+
+Os arquivos saem com nome estranho (totem-a3f91c)
+  O totem.txt nao foi lido. Refaca o passo 5 e reabra o jogo.
+
+
+-----------------------------------------------------------
+TROCAR AS PERGUNTAS NA HORA (so se a Suricatus pedir)
+-----------------------------------------------------------
+
+As perguntas ja vao dentro do jogo. Se for preciso corrigir
+alguma no dia, a Suricatus envia um arquivo chamado
+questions.json. Coloque esse arquivo em
+
+  C:\Suricatus\Dados
+
+e reabra o jogo: ele passa a usar o arquivo novo. Para voltar
+ao original, apague esse arquivo e reabra.
+
+
+-----------------------------------------------------------
+SUPORTE
+-----------------------------------------------------------
+
+Suricatus Games

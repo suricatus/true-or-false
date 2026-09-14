@@ -41,6 +41,9 @@ namespace Suricatus.TrueOrFalse.Core
                 if (string.IsNullOrWhiteSpace(q.statement))
                     errors.Add($"{where}: campo 'statement' vazio.");
 
+                if (q.seconds < 0f)
+                    errors.Add($"{where}: campo 'seconds' negativo ({q.seconds}).");
+
                 if (string.IsNullOrWhiteSpace(q.id))
                     warnings.Add($"{where}: sem 'id'. Ids ajudam a rastrear a pergunta no relatorio.");
                 else if (!seen.Add(q.id))

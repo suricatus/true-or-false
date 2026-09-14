@@ -42,6 +42,7 @@ O script vai **no próprio AtracaoPanel** (que já ocupa a tela inteira), não e
 | Timer Fill | `PerguntasPanel/Timer` (a Image com Image Type = Filled) |
 | Timer Text | `PerguntasPanel/Timer/TimerText` |
 | Timer Root | `PerguntasPanel/Timer` |
+| Timer Pulse Target | opcional — o que pulsa a cada segundo; vazio = `Timer Root` (intensidade no tema, em *Pulsacao do cronometro*) |
 | Score Text | `PerguntasPanel/Score/TimerText` |
 | Question Text | `PerguntasPanel/QuestionContainer/TitleText` |
 | Question Image | opcional — só se você for usar imagem por pergunta |

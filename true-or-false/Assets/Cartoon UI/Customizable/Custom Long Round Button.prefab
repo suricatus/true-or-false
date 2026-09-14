@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: O CORINTHIANS FOI FUNDADO EM 1914?
+  m_text: O CONSUMIDOR TEM 7 DIAS PARA DESISTIR DE UMA COMPRA FEITA PELA INTERNET.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}
   m_sharedMaterial: {fileID: -1900174317084116495, guid: 032a72de78a4c20498cd65f55cd21113, type: 2}

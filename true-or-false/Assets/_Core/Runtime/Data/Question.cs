@@ -22,5 +22,12 @@ namespace Suricatus.TrueOrFalse.Core
 
         /// <summary>Nome do sprite opcional que acompanha a pergunta, resolvido pelo tema.</summary>
         public string imageKey;
+
+        /// <summary>
+        /// Tempo de resposta desta pergunta, em segundos. Opcional: 0 (ou ausente no JSON)
+        /// deixa o jogo calcular o tempo pelo tamanho do enunciado, conforme o GameConfig.
+        /// Preencher aqui e uma excecao manual, que vence o calculo automatico.
+        /// </summary>
+        public float seconds;
     }
 }

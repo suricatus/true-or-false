@@ -13,8 +13,17 @@ namespace Suricatus.TrueOrFalse.Core
         [Tooltip("Quantas perguntas por partida. Use 0 para usar todas as perguntas do arquivo.")]
         [Min(0)] public int questionsPerRound = 10;
 
-        [Tooltip("Tempo de resposta por pergunta. 0 desliga o cronometro.")]
+        [Tooltip("Tempo base de resposta por pergunta. 0 desliga o cronometro.")]
         [Min(0f)] public float secondsPerQuestion = 10f;
+
+        [Tooltip("Segundos somados ao tempo base a cada 100 caracteres do enunciado, para dar folego " +
+                 "as perguntas mais longas. 0 mantem o mesmo tempo para todas, como antes. " +
+                 "Uma pergunta pode furar esta conta escrevendo 'seconds' na propria pergunta do JSON.")]
+        [Min(0f)] public float extraSecondsPer100Characters = 0f;
+
+        [Tooltip("Teto do tempo calculado pelo tamanho, para que um enunciado enorme nao trave a fila " +
+                 "do totem. 0 desliga o teto. Nao limita o 'seconds' escrito na pergunta.")]
+        [Min(0f)] public float maxSecondsPerQuestion = 0f;
 
         public bool shuffleQuestions = true;
 
@@ -46,6 +55,32 @@ namespace Suricatus.TrueOrFalse.Core
         [Tooltip("Segundos sem toque na tela de resultado antes de voltar sozinho para a atracao. 0 desliga.")]
         [Min(0f)] public float idleResetSeconds = 45f;
 
+        [Header("Escolha de assunto")]
+        [Tooltip("Liga a tela de escolha de assunto entre a atracao e a primeira pergunta. " +
+                 "Os assuntos saem do campo 'category' das perguntas — nao ha lista a cadastrar. " +
+                 "Desligado, o toque na atracao inicia a rodada com o catalogo inteiro, como antes.")]
+        public bool selectTopicBeforeRound = false;
+
+        [Tooltip("Minimo de perguntas para um assunto aparecer na tela de escolha. " +
+                 "Evita oferecer um assunto com conteudo raso demais para uma rodada.")]
+        [Min(1)] public int minQuestionsPerTopic = 1;
+
+        [Header("Registro da acao")]
+        [Tooltip("Nome deste totem nos CSVs de registro. Com varios totens rodando o MESMO APK, " +
+                 "prefira batizar cada aparelho com um arquivo 'totem.txt' na pasta externa: o valor " +
+                 "daqui sairia igual em todos. Vazio e o normal.")]
+        public string totemId = "";
+
+        [Tooltip("Endereco do aplicativo Web do Google Apps Script que grava na planilha. " +
+                 "VAZIO desliga o envio para a nuvem, que e o padrao. O CSV local nao depende " +
+                 "disto: a planilha serve para acompanhar a acao a distancia, e o relatorio " +
+                 "final continua saindo dos arquivos.")]
+        public string cloudEndpoint = "";
+
+        [Tooltip("Senha combinada com o script da planilha. Impede que alguem que descubra o " +
+                 "endereco escreva linhas falsas.")]
+        public string cloudToken = "";
+
         [Header("Conteudo")]
         [Tooltip("Caminho do arquivo de perguntas, relativo a StreamingAssets.")]
         public string questionsFile = "Suricatus/questions.json";
@@ -72,6 +107,8 @@ namespace Suricatus.TrueOrFalse.Core
         {
             questionsPerRound = questionsPerRound,
             secondsPerQuestion = secondsPerQuestion,
+            extraSecondsPer100Characters = extraSecondsPer100Characters,
+            maxSecondsPerQuestion = maxSecondsPerQuestion,
             feedbackSeconds = 0f,
             pointsPerCorrect = pointsPerCorrect,
             pointsPerWrong = pointsPerWrong,

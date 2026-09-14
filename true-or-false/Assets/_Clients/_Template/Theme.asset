@@ -20,6 +20,13 @@ MonoBehaviour:
     background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     title: VERDADEIRO OU FALSO?
     callToAction: TOQUE NA TELA PARA INICIAR
+  topics:
+    background: {fileID: 0}
+    title: 'SELECIONE O ASSUNTO QUE DESEJA JOGAR:'
+    callToAction: 
+    showAllTopics: 0
+    allTopicsLabel: TODOS OS ASSUNTOS
+    styles: []
   question:
     background: {fileID: -3747800011533971237, guid: 1ab6b3c0e123fa34eb03afc6c5f1ab9c, type: 3}
     trueLabel: VERDADEIRO

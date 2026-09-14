@@ -135,6 +135,94 @@ namespace Suricatus.TrueOrFalse.Core.Tests
         }
 
         [Test]
+        public void LongStatement_GetsMoreTimeThanShortOne()
+        {
+            var settings = Settings(questions: 2);
+            settings.extraSecondsPer100Characters = 5f;
+
+            var pool = new List<Question>
+            {
+                new Question { id = "curta", statement = new string('a', 50), isTrue = true },
+                new Question { id = "longa", statement = new string('a', 200), isTrue = true },
+            };
+
+            var session = new GameSession();
+            session.Start(pool, settings);
+
+            // 10 base + 5 por 100 caracteres: 12,5 na curta e 20 na longa.
+            Assert.AreEqual(12.5f, session.SecondsTotal, 0.001f);
+            session.Answer(true);
+            session.ContinueFromFeedback();
+            Assert.AreEqual(20f, session.SecondsTotal, 0.001f);
+        }
+
+        [Test]
+        public void MaxSecondsPerQuestion_CapsTheLengthBonus()
+        {
+            var settings = Settings();
+            settings.extraSecondsPer100Characters = 5f;
+            settings.maxSecondsPerQuestion = 15f;
+
+            var session = new GameSession();
+            session.Start(new List<Question>
+            {
+                new Question { id = "enorme", statement = new string('a', 400), isTrue = true },
+            }, settings);
+
+            Assert.AreEqual(15f, session.SecondsTotal, 0.001f);
+        }
+
+        [Test]
+        public void QuestionSeconds_OverridesConfigAndCap()
+        {
+            var settings = Settings();
+            settings.extraSecondsPer100Characters = 5f;
+            settings.maxSecondsPerQuestion = 15f;
+
+            var session = new GameSession();
+            session.Start(new List<Question>
+            {
+                new Question { id = "manual", statement = "Curta.", isTrue = true, seconds = 25f },
+            }, settings);
+
+            Assert.AreEqual(25f, session.SecondsTotal, 0.001f);
+        }
+
+        [Test]
+        public void UntimedRound_IgnoresPerQuestionSeconds()
+        {
+            var settings = Settings(seconds: 0f);
+
+            var session = new GameSession();
+            session.Start(new List<Question>
+            {
+                new Question { id = "manual", statement = "Curta.", isTrue = true, seconds = 5f },
+            }, settings);
+
+            Assert.IsTrue(session.IsUntimed);
+            session.Tick(600f);
+            Assert.AreEqual(SessionState.AwaitingAnswer, session.State);
+        }
+
+        [Test]
+        public void TimerTicked_ReportsTheTotalOfTheCurrentQuestion()
+        {
+            var settings = Settings();
+            settings.extraSecondsPer100Characters = 5f;
+
+            float reportedTotal = 0f;
+            var session = new GameSession();
+            session.TimerTicked += (left, total) => reportedTotal = total;
+            session.Start(new List<Question>
+            {
+                new Question { id = "longa", statement = new string('a', 200), isTrue = true },
+            }, settings);
+
+            session.Tick(1f);
+            Assert.AreEqual(20f, reportedTotal, 0.001f);
+        }
+
+        [Test]
         public void ManualFeedback_WaitsForContinue()
         {
             var session = new GameSession();

@@ -29,18 +29,46 @@ namespace Suricatus.TrueOrFalse.Core
         private int _timedOut;
 
         private float _secondsLeft;
+        private float _secondsTotal;
         private float _feedbackLeft;
         private float _elapsed;
 
         public SessionState State { get; private set; } = SessionState.Idle;
         public int Score => _score;
         public float SecondsLeft => _secondsLeft;
+
+        /// <summary>Tempo cheio da pergunta atual, ja calculado pelo tamanho do enunciado.</summary>
+        public float SecondsTotal => _secondsTotal;
         public int QuestionNumber => _index + 1;
         public int TotalQuestions => _questions.Count;
         public Question CurrentQuestion => _index >= 0 && _index < _questions.Count ? _questions[_index] : null;
 
         /// <summary>True quando o timer esta desligado por configuracao (secondsPerQuestion &lt;= 0).</summary>
         public bool IsUntimed => _settings.secondsPerQuestion <= 0f;
+
+        /// <summary>
+        /// Quanto tempo esta pergunta vale, em segundos. A ordem e: tempo escrito na propria
+        /// pergunta (campo <c>seconds</c> do JSON) vence tudo; senao, o tempo base cresce com o
+        /// tamanho do enunciado e para no teto configurado. Com o cronometro desligado, 0.
+        /// </summary>
+        public float SecondsFor(Question question)
+        {
+            if (_settings.secondsPerQuestion <= 0f) return 0f;
+            if (question != null && question.seconds > 0f) return question.seconds;
+
+            float seconds = _settings.secondsPerQuestion;
+
+            if (_settings.extraSecondsPer100Characters > 0f && question != null)
+            {
+                int length = question.statement != null ? question.statement.Length : 0;
+                seconds += _settings.extraSecondsPer100Characters * (length / 100f);
+            }
+
+            if (_settings.maxSecondsPerQuestion > 0f)
+                seconds = Math.Min(seconds, _settings.maxSecondsPerQuestion);
+
+            return seconds;
+        }
 
         /// <summary>
         /// Inicia uma rodada sorteando as perguntas a partir de <paramref name="pool"/>.
@@ -93,12 +121,12 @@ namespace Suricatus.TrueOrFalse.Core
                     if (_secondsLeft <= 0f)
                     {
                         _secondsLeft = 0f;
-                        TimerTicked?.Invoke(0f, _settings.secondsPerQuestion);
+                        TimerTicked?.Invoke(0f, _secondsTotal);
                         Resolve(AnswerVerdict.TimedOut, false);
                         return;
                     }
 
-                    TimerTicked?.Invoke(_secondsLeft, _settings.secondsPerQuestion);
+                    TimerTicked?.Invoke(_secondsLeft, _secondsTotal);
                     break;
 
                 case SessionState.ShowingFeedback:
@@ -132,10 +160,11 @@ namespace Suricatus.TrueOrFalse.Core
         private void Present()
         {
             State = SessionState.AwaitingAnswer;
-            _secondsLeft = _settings.secondsPerQuestion;
+            _secondsTotal = SecondsFor(CurrentQuestion);
+            _secondsLeft = _secondsTotal;
 
             QuestionPresented?.Invoke(CurrentQuestion, QuestionNumber, TotalQuestions);
-            if (!IsUntimed) TimerTicked?.Invoke(_secondsLeft, _settings.secondsPerQuestion);
+            if (!IsUntimed) TimerTicked?.Invoke(_secondsLeft, _secondsTotal);
         }
 
         private void Resolve(AnswerVerdict verdict, bool playerAnswer)

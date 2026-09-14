@@ -48,7 +48,7 @@ namespace Suricatus.TrueOrFalse.Presentation
         public void OnPointerClick(PointerEventData eventData)
         {
             if (Runner == null) return;
-            Runner.StartRound();
+            Runner.Begin();
         }
     }
 }

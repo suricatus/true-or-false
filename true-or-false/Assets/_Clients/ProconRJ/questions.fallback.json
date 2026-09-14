@@ -1,0 +1,742 @@
+{
+  "schemaVersion": "1",
+  "clientName": "PROCON-RJ / SEDCON",
+  "questions": [
+    {
+      "id": "bets-01",
+      "statement": "Para funcionar no Brasil, uma plataforma de apostas precisa de autorização do poder público.",
+      "isTrue": true,
+      "explanation": "Só podem atuar no país as plataformas autorizadas. Muitos sites e aplicativos operam sem autorização, dificultam o saque de valores e aumentam o risco de fraude.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-02",
+      "statement": "Apostar é uma forma de estratégia financeira, como investir em ações ou em um CDB.",
+      "isTrue": false,
+      "explanation": "Apostas e cassinos online operam com base no acaso e não pagam rendimentos. Estratégia financeira de verdade protege e faz crescer o patrimônio com estudo, planejamento e dados reais.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-03",
+      "statement": "Menores de 18 anos podem apostar desde que tenham autorização dos pais.",
+      "isTrue": false,
+      "explanation": "A Lei nº 14.790/2023 proíbe qualquer participação de menores em apostas esportivas e jogos de azar virtuais. Não há exceção por autorização familiar.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-04",
+      "statement": "Plataformas autorizadas no Brasil são obrigadas a verificar a identidade do usuário, inclusive com reconhecimento facial.",
+      "isTrue": true,
+      "explanation": "É a barreira de segurança prevista na regulamentação. Se uma criança ou adolescente consegue entrar e jogar, a plataforma está cometendo irregularidade gravíssima.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-05",
+      "statement": "Bônus de boas-vindas e ofertas de \"aposta sem risco\" em cadastros iniciais são permitidos no Brasil.",
+      "isTrue": false,
+      "explanation": "Esse tipo de oferta em cadastro inicial é proibido. Promoções que exigem apostar o próprio dinheiro dezenas de vezes antes de sacar também multiplicam o risco de perda.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-06",
+      "statement": "É permitido pagar apostas diretamente com cartão de crédito nos sites de apostas.",
+      "isTrue": false,
+      "explanation": "O uso de cartão de crédito direto em sites de apostas é proibido por lei. O perigo aparece disfarçado: a pessoa gasta o salário no jogo e passa a usar o cartão para as compras do dia a dia.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-07",
+      "statement": "Quem entende muito de esporte sempre ganha nas apostas esportivas.",
+      "isTrue": false,
+      "explanation": "Conhecer o esporte ajuda a entender a partida, mas não elimina a surpresa: lesões, expulsões, erros de arbitragem e até o clima mudam o resultado. Os sistemas das empresas usam modelos matemáticos para garantir a vantagem da plataforma.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-08",
+      "statement": "As odds (probabilidades) são definidas pela própria plataforma e já incluem a comissão dela.",
+      "isTrue": true,
+      "explanation": "As odds funcionam de forma inversa: quanto maior a chance de o time vencer, menor o prêmio pago. E o cálculo já embute o ganho da casa.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-09",
+      "statement": "A chamada \"margem da casa\" é uma taxa invisível embutida em cada palpite.",
+      "isTrue": true,
+      "explanation": "O sistema é programado para que, no longo prazo, a plataforma sempre fique com uma parte do dinheiro movimentado. Quanto mais tempo o consumidor passa apostando, maior tende a ser o prejuízo.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-10",
+      "statement": "O botão de encerrar a aposta antes do fim (cash out) permite ao apostador controlar o resultado.",
+      "isTrue": false,
+      "explanation": "Gráficos, estatísticas e cash out geram apenas a ilusão de controle. Nenhuma estratégia anula o acaso dos eventos esportivos nem a vantagem econômica da plataforma.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-11",
+      "statement": "Pensar \"faltou muito pouco, na próxima eu consigo\" significa que a chance de acertar aumentou.",
+      "isTrue": false,
+      "explanation": "O \"quase ganhei\" é um truque da mente. Na prática, quase ganhar continua sendo uma perda e não muda em nada as chances da rodada seguinte.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-12",
+      "statement": "Ganhar uma rodada aumenta a chance de ganhar a próxima.",
+      "isTrue": false,
+      "explanation": "É o excesso de confiança: o apostador esquece as vezes em que perdeu e acha que descobriu uma \"fórmula mágica\". Ganhos anteriores não aumentam as chances seguintes.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-13",
+      "statement": "Pequenos prêmios distribuídos ao longo do tempo servem para manter o apostador jogando.",
+      "isTrue": true,
+      "explanation": "É um gatilho psicológico. Recompensas imprevisíveis liberam dopamina e criam uma falsa percepção de vitória, fazendo a pessoa continuar sem notar o total já perdido.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-14",
+      "statement": "Propagandas que prometem \"ganho fácil\", \"enriquecimento rápido\" ou \"estratégias infalíveis\" são proibidas no Brasil.",
+      "isTrue": true,
+      "explanation": "São proibidas e devem ser denunciadas ao PROCON-RJ. Rostos famosos em anúncios e redes sociais não reduzem os riscos: influenciadores e atletas não conhecem os resultados futuros.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-15",
+      "statement": "Publicidade e jogos de azar com personagens coloridos e animais infantilizados são permitidos, desde que o site informe a idade mínima.",
+      "isTrue": false,
+      "explanation": "Qualquer publicidade ou formato de jogo de azar capaz de atrair crianças e adolescentes para apostas é proibido no Brasil, mesmo com aviso de idade.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-16",
+      "statement": "Toda plataforma autorizada a operar no Brasil é obrigada a oferecer a ferramenta de Autoexclusão.",
+      "isTrue": true,
+      "explanation": "A Autoexclusão é um botão dentro do site ou aplicativo que permite ao próprio apostador bloquear seu acesso, por prazo determinado ou indeterminado.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-17",
+      "statement": "A Plataforma Centralizada de Autoexclusão também impede que as bets enviem publicidade por e-mail ou celular.",
+      "isTrue": true,
+      "explanation": "Ativado o bloqueio na plataforma da Secretaria de Prêmios e Apostas (autoexclusaoapostas.fazenda.gov.br), os sites oficiais ficam proibidos de aceitar o acesso e de enviar qualquer publicidade.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-18",
+      "statement": "Ludopatia, o vício em jogos de azar, é reconhecida oficialmente pela Organização Mundial da Saúde como transtorno mental crônico.",
+      "isTrue": true,
+      "explanation": "É o nome técnico do vício em jogos de azar. O dependente perde totalmente o controle e precisa de tratamento médico.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-19",
+      "statement": "Os CAPS (Centros de Atenção Psicossocial) atendem gratuitamente pessoas com vício em jogos.",
+      "isTrue": true,
+      "explanation": "O atendimento é gratuito e voltado também a comportamentos compulsivos e ludopatia. As UBS são a porta de entrada do SUS e o SUS ainda oferece teleatendimento especializado.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "bets-20",
+      "statement": "O CVV (Centro de Valorização da Vida) atende 24 horas por dia, de forma gratuita, anônima e sigilosa, pelo telefone 188.",
+      "isTrue": true,
+      "explanation": "Voluntários oferecem apoio emocional pelo 188 e pelo portal www.cvv.org.br, a qualquer hora do dia.",
+      "category": "Apostas e Bets",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-01",
+      "statement": "O orçamento ideal é aquele em que os ganhos e os gastos ficam exatamente equilibrados.",
+      "isTrue": false,
+      "explanation": "O orçamento ideal é o que tem gastos MENORES que os ganhos. Só assim sobra margem para poupar todo mês e cobrir despesas inesperadas.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-02",
+      "statement": "A reserva de emergência ideal corresponde a algo entre 6 e 12 meses das despesas mensais.",
+      "isTrue": true,
+      "explanation": "Se a família gasta mil reais por mês, precisa de seis a doze mil de fundo de reserva. O valor varia conforme o perfil de cada família, mas essa é a referência.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-03",
+      "statement": "Um imóvel ou um terreno pode ser contado como reserva de emergência.",
+      "isTrue": false,
+      "explanation": "É um erro comum. A reserva precisa ter liquidez, ou seja, estar disponível rapidamente. Não se transforma um bem em dinheiro da noite para o dia.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-04",
+      "statement": "Usar o fundo de reserva para pagar uma viagem ou uma festa de aniversário é um uso correto da reserva de emergência.",
+      "isTrue": false,
+      "explanation": "Não é correto descapitalizar a reserva para isso: aniversário tem todo ano e viagem pode ser feita quando quiser, mas esses eventos precisam ser planejados à parte.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-05",
+      "statement": "As prateleiras cheias de miudezas perto dos caixas de supermercado se chamam, no varejo, de \"impulso\".",
+      "isTrue": true,
+      "explanation": "O nome vem do comportamento que elas provocam: comprar \"com os olhos\", pela fome do momento, sem pensar. Até a altura das prateleiras da loja é planejada.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-06",
+      "statement": "Produtos em embalagem econômica sempre saem mais baratos por unidade.",
+      "isTrue": false,
+      "explanation": "Nem sempre. Leite em pó em pacote de 800g costuma sair mais caro que 4 pacotes de 200g; a água sanitária de 2L costuma sair mais cara que duas de 1L. Vale conferir o preço por unidade de medida.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-07",
+      "statement": "Ir ao supermercado com fome ajuda a aproveitar melhor as promoções.",
+      "isTrue": false,
+      "explanation": "É o contrário: com fome, a tentação de colocar itens a mais no carrinho aumenta muito. A recomendação é ir com lista pronta e, se for pouca coisa, pegar cesta em vez de carrinho.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-08",
+      "statement": "Os juros do cheque especial estão entre os mais altos do mercado.",
+      "isTrue": true,
+      "explanation": "O cheque especial é dinheiro do banco à disposição na conta. Se usado, o cliente paga juros até devolver o valor, e essa é uma das taxas mais caras que existem.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-09",
+      "statement": "Quem ganha muito dinheiro não corre o risco de se endividar.",
+      "isTrue": false,
+      "explanation": "Há gente que ganha muito e mesmo assim se endivida. A dificuldade não está em quanto se ganha, mas nas escolhas: conter o impulso de compra, consumir de forma consciente e planejar.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-10",
+      "statement": "No Desafio das 52 Semanas, no nível básico, guardando R$ 1,00 a mais a cada semana, chega-se a R$ 1.378,00 ao fim do ano.",
+      "isTrue": true,
+      "explanation": "Começa com R$ 1,00 na primeira semana e termina com R$ 52,00 na última. O aumento gradual faz o peso do valor poupado quase não ser sentido.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-11",
+      "statement": "Para reequilibrar um orçamento estourado, a primeira medida é cortar despesas.",
+      "isTrue": false,
+      "explanation": "A ordem sugerida é outra: primeiro evitar novos gastos, depois revisar o que pode ser reduzido ou substituído, e só então cortar o que sobrar.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-12",
+      "statement": "Consumo e consumismo são a mesma coisa.",
+      "isTrue": false,
+      "explanation": "Consumo é comprar produtos e serviços de que se precisa para viver. Consumismo é comprar sem precisar, sem pensar se cabe no bolso e sem se importar se vai faltar para algo necessário.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-13",
+      "statement": "Planos de curto prazo são os que se pretende realizar em até 2 anos.",
+      "isTrue": true,
+      "explanation": "No Simulador de Sonhos: curto prazo até 2 anos, médio prazo de 2 a 5 anos e longo prazo de 5 a 10 anos ou mais.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-14",
+      "statement": "Pagar à vista, em dinheiro ou por Pix, costuma abrir mais espaço para pedir desconto.",
+      "isTrue": true,
+      "explanation": "O estabelecimento recebe o dinheiro na hora e não arca com os custos da maquininha de cartão. Conhecer o preço de marcas concorrentes também ajuda a negociar.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-15",
+      "statement": "Juro é o acréscimo cobrado por algo que foi comprado hoje para ser pago depois.",
+      "isTrue": true,
+      "explanation": "Quando a venda é a prazo, é como se o lojista tivesse emprestado o valor do produto ao consumidor. Para compensar, aplica juros sobre o que ainda será pago.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-16",
+      "statement": "Entre as dívidas, a recomendação é começar quitando as que têm os juros mais altos.",
+      "isTrue": true,
+      "explanation": "São as que têm maior potencial de virar bola de neve. Na prática, porém, às vezes é mais urgente quitar uma dívida com parente ou amigo, pelo constrangimento que gera.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-17",
+      "statement": "A mesada só funciona como ferramenta de educação financeira se for paga uma vez por mês.",
+      "isTrue": false,
+      "explanation": "Pode ser semanada ou quinzenada, conforme a idade da criança e o entendimento dela sobre a passagem do tempo. O que importa é o hábito, não o intervalo.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-18",
+      "statement": "Cartão de crédito, falta de planejamento e impulsividade são apontados como os três grandes \"destruidores de sonhos\".",
+      "isTrue": true,
+      "explanation": "O cartão vira armadilha quando é tratado como complemento da renda: no mês seguinte a fatura não fecha e começa a bola de neve dos juros.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-19",
+      "statement": "Contas como luz, água, TV a cabo e telefone podem ter a cobrança integral suspensa por um período, a pedido do consumidor.",
+      "isTrue": true,
+      "explanation": "É um direito pouco usado por desconhecimento: a suspensão pode durar de 30 a 120 dias, útil em uma viagem longa ou para reorganizar as contas.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "fin-20",
+      "statement": "Registrar gastos pequenos, como um docinho ou R$ 1,00 dado a alguém, é perda de tempo no orçamento familiar.",
+      "isTrue": false,
+      "explanation": "A orientação é registrar tudo, mesmo o que parece sem importância. Só assim dá para saber para onde vai todo o dinheiro que a família recebe.",
+      "category": "Educação Financeira",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-01",
+      "statement": "Quando um produto apresenta vício (defeito), o fornecedor tem 30 dias para resolver o problema.",
+      "isTrue": true,
+      "explanation": "É o prazo do art. 18 do CDC. Só depois de esgotado esse prazo sem solução nasce para o consumidor o direito de exigir troca, dinheiro de volta ou desconto.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-02",
+      "statement": "O prazo de 30 dias para consertar um produto com vício pode ser alterado por acordo entre as partes, desde que fique entre 7 e 180 dias.",
+      "isTrue": true,
+      "explanation": "Em contratos de adesão, essa cláusula de prazo precisa ser convencionada em separado, com manifestação expressa do consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-03",
+      "statement": "Passado o prazo sem conserto, é o fornecedor quem escolhe entre trocar o produto, devolver o dinheiro ou dar desconto.",
+      "isTrue": false,
+      "explanation": "A escolha é total e absoluta do consumidor. Atendidos os critérios, o fornecedor não pode negar a alternativa escolhida.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-04",
+      "statement": "O prazo para reclamar de um defeito aparente é de 30 dias para produtos não duráveis e 90 dias para produtos duráveis.",
+      "isTrue": true,
+      "explanation": "Não duráveis são cosméticos, alimentos, medicamentos, lavagem de carro. Duráveis são veículos, aparelhos telefônicos, pintura automotiva. A contagem começa na entrega do produto ou no fim do serviço.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-05",
+      "statement": "No caso de vício oculto, o prazo para reclamar começa a contar na data da entrega do produto.",
+      "isTrue": false,
+      "explanation": "No vício oculto o prazo só começa quando o defeito fica evidenciado. É o caso do carro que sai da concessionária aparentemente bom e em pouco tempo apresenta panes elétricas graves.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-06",
+      "statement": "A garantia legal precisa estar escrita em algum documento para valer.",
+      "isTrue": false,
+      "explanation": "A garantia legal independe de termo expresso: ao pagar por um produto, o consumidor já espera que ele funcione. Cláusula de contrato que exonere o fornecedor dessa responsabilidade é nula.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-07",
+      "statement": "A garantia contratual oferecida pela loja substitui a garantia legal.",
+      "isTrue": false,
+      "explanation": "A garantia contratual é COMPLEMENTAR à legal, e precisa ser dada por escrito, preenchida pelo fornecedor e acompanhada do manual de instruções.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-08",
+      "statement": "Em compras feitas pela internet ou por telefone, o consumidor tem 7 dias para desistir.",
+      "isTrue": true,
+      "explanation": "É o direito de arrependimento (art. 49), válido para contratações fora do estabelecimento comercial. O prazo conta da assinatura do contrato ou do recebimento do produto.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-09",
+      "statement": "Para exercer o direito de arrependimento, o consumidor precisa justificar o motivo da desistência.",
+      "isTrue": false,
+      "explanation": "Não precisa expor motivo nenhum. É um prazo de reflexão, e os valores pagos devem ser devolvidos de imediato, monetariamente atualizados.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-10",
+      "statement": "Condicionar a venda de um produto à compra de outro é prática abusiva proibida pelo CDC.",
+      "isTrue": true,
+      "explanation": "É a venda casada (art. 39, I). Exemplo clássico: casa de show que obriga quem compra bebida a levar junto o copo do evento. Deve ser denunciada.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-11",
+      "statement": "Se a empresa envia um produto que o consumidor não pediu, ele é obrigado a pagar ou a devolver às próprias custas.",
+      "isTrue": false,
+      "explanation": "Produto ou serviço enviado sem solicitação prévia equipara-se a amostra grátis: não existe obrigação de pagamento. É o caso do banco que manda cartão não pedido e depois cobra anuidade.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-12",
+      "statement": "Se o preço do panfleto for menor que o da prateleira, o consumidor pode exigir o preço anunciado.",
+      "isTrue": true,
+      "explanation": "A oferta obriga o fornecedor e integra o contrato (art. 30). Basta que a publicidade esteja vigente, ou seja, dentro do prazo informado no anúncio.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-13",
+      "statement": "Publicidade que se aproveita da deficiência de julgamento e experiência da criança é considerada abusiva.",
+      "isTrue": true,
+      "explanation": "Também é abusiva a publicidade discriminatória, a que incita violência, explora medo ou superstição, desrespeita valores ambientais ou induz o consumidor a agir de forma perigosa à saúde.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-14",
+      "statement": "Quem precisa provar que uma propaganda é enganosa é o consumidor.",
+      "isTrue": false,
+      "explanation": "O ônus da prova da veracidade e correção da publicidade cabe a quem a patrocina (art. 38). O anunciante deve manter em seu poder os dados fáticos, técnicos e científicos da mensagem.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-15",
+      "statement": "Uma publicidade pode ser enganosa mesmo sem dizer nada falso.",
+      "isTrue": true,
+      "explanation": "É a enganosidade por omissão: quando deixa de informar dado essencial sobre o produto ou serviço. A informação pode ser inteira ou parcialmente falsa, ou simplesmente incompleta.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-16",
+      "statement": "Mesmo estando devendo, o consumidor não pode ser exposto a ridículo, constrangimento ou ameaça na cobrança.",
+      "isTrue": true,
+      "explanation": "É o art. 42 do CDC. A cobrança é legítima, mas tem limites: nunca pode depreciar, ameaçar ou humilhar o devedor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-17",
+      "statement": "Quem é cobrado e paga uma quantia indevida tem direito a receber de volta o dobro do que pagou a mais.",
+      "isTrue": true,
+      "explanation": "É a repetição do indébito, com correção monetária e juros legais. A exceção é o engano justificável: em erro simples, a devolução é só na forma simples.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-18",
+      "statement": "Uma informação negativa pode ficar registrada em cadastro de consumidores por tempo indeterminado.",
+      "isTrue": false,
+      "explanation": "Os cadastros não podem conter informações negativas referentes a período superior a cinco anos.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-19",
+      "statement": "A abertura de um cadastro de consumo que o consumidor não pediu deve ser comunicada a ele por escrito.",
+      "isTrue": true,
+      "explanation": "E, achando inexatidão nos dados, ele pode exigir correção imediata: o arquivista tem 5 dias úteis para comunicar a alteração aos destinatários da informação incorreta.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-20",
+      "statement": "A multa por atraso no pagamento de uma prestação não pode passar de 2% do valor da parcela.",
+      "isTrue": true,
+      "explanation": "Limite do art. 52, §1º. Acima disso configura abuso econômico contra o consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-21",
+      "statement": "O consumidor tem direito de quitar a dívida antecipadamente com redução proporcional dos juros.",
+      "isTrue": true,
+      "explanation": "A liquidação antecipada, total ou parcial, é assegurada por lei. Cláusula que renuncie a esse direito é abusiva.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-22",
+      "statement": "Quando uma cláusula do contrato admite mais de uma interpretação, vale a que for mais favorável ao consumidor.",
+      "isTrue": true,
+      "explanation": "É o art. 47 do CDC, baseado no reconhecimento de que o consumidor é a parte mais vulnerável da relação de consumo.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-23",
+      "statement": "Nos contratos de adesão escritos, a fonte não pode ser menor que corpo 12.",
+      "isTrue": true,
+      "explanation": "Além do tamanho mínimo, as cláusulas que limitam direitos do consumidor devem vir em destaque, para permitir compreensão imediata e fácil. Sem destaque, podem ser consideradas nulas.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-24",
+      "statement": "Cláusula que obriga o consumidor a resolver conflitos por arbitragem é válida se estiver no contrato.",
+      "isTrue": false,
+      "explanation": "É nula de pleno direito (art. 51, VII). Também é nula a que limita o acesso ao Poder Judiciário ou que inverte o ônus da prova em prejuízo do consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-25",
+      "statement": "Se um contrato tiver uma cláusula abusiva, o contrato inteiro se torna nulo automaticamente.",
+      "isTrue": false,
+      "explanation": "A nulidade de uma cláusula abusiva não invalida o contrato, salvo se a ausência dela gerar ônus excessivo a alguma das partes.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-26",
+      "statement": "O orçamento prévio de um serviço vale por 10 dias, salvo estipulação em contrário.",
+      "isTrue": true,
+      "explanation": "O orçamento deve discriminar mão de obra, materiais, condições de pagamento e datas de início e fim. Aprovado, obriga as partes e só muda por livre negociação.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-27",
+      "statement": "Serviços essenciais, como água, luz e gás, devem ser prestados de forma contínua.",
+      "isTrue": true,
+      "explanation": "Órgãos públicos e concessionárias são obrigados a fornecer serviços adequados, eficientes, seguros e, quanto aos essenciais, contínuos. Falhas geram dever de reparar o consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-28",
+      "statement": "Quem sofre dano em um acidente de consumo sem ter comprado nada também é considerado consumidor.",
+      "isTrue": true,
+      "explanation": "É o consumidor por equiparação. Exemplo: a pessoa que tem a casa destruída por um acidente aéreo, mesmo sem ter comprado passagem, ou quem recebe boletos de um banco com o qual nunca teve relação.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-29",
+      "statement": "Em um conserto, a assistência técnica pode usar peças usadas sem avisar o consumidor.",
+      "isTrue": false,
+      "explanation": "O serviço de reparo tem obrigação implícita de empregar peças originais, adequadas e novas, ou que mantenham as especificações do fabricante — e só com autorização expressa do consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-30",
+      "statement": "Se o fornecedor não sabia do defeito do produto, ele fica livre de responsabilidade.",
+      "isTrue": false,
+      "explanation": "A ignorância do fornecedor sobre o vício não o exime de responsabilidade (art. 23). Ele não pode se negar a consertar alegando que não sabia da avaria.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-31",
+      "statement": "Um produto passa a ser considerado defeituoso quando outro de melhor qualidade chega ao mercado.",
+      "isTrue": false,
+      "explanation": "O CDC é explícito: o produto não é defeituoso pelo fato de outro melhor ter sido colocado no mercado. Defeituoso é o que não oferece a segurança que dele legitimamente se espera.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-32",
+      "statement": "Produtos com prazo de validade vencido são considerados impróprios ao consumo pelo CDC.",
+      "isTrue": true,
+      "explanation": "Junto com os deteriorados, adulterados, falsificados, avariados, nocivos à saúde e os que estejam em desacordo com as normas de fabricação, distribuição ou apresentação.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-33",
+      "statement": "O prazo para ir à Justiça pedir reparação por dano causado por um produto ou serviço é de 5 anos.",
+      "isTrue": true,
+      "explanation": "A contagem começa no momento em que o consumidor toma conhecimento do dano e de quem o causou.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-34",
+      "statement": "Superendividamento é a impossibilidade manifesta de o consumidor de boa-fé pagar todas as suas dívidas de consumo sem comprometer o mínimo existencial.",
+      "isTrue": true,
+      "explanation": "Conceito incluído pela Lei nº 14.181/2021. Prevenção, crédito responsável e educação financeira passaram a ser direitos básicos do consumidor.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-35",
+      "statement": "Em compra parcelada, se o consumidor não consegue pagar e o produto é retomado, ele perde tudo o que já pagou.",
+      "isTrue": false,
+      "explanation": "É nula de pleno direito a cláusula que estabeleça a perda total das prestações pagas em benefício do credor que retoma o produto (art. 53).",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-36",
+      "statement": "Mensagens de aplicativo e e-mails trocados com o fornecedor podem servir de prova numa reclamação.",
+      "isTrue": true,
+      "explanation": "Declarações de vontade em escritos particulares, recibos e pré-contratos vinculam o fornecedor. E-mails e mensagens de texto são considerados meios de prova para fins judiciais.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "cdc-37",
+      "statement": "O PROCON-RJ atende o consumidor pelo telefone 151.",
+      "isTrue": true,
+      "explanation": "Além do 151, há o proconline.rj.gov.br, o e-mail reclame@procon.rj.gov.br e o atendimento presencial na Rua Beatriz Larrogoiti Lucas, 121, Cidade Nova, Rio de Janeiro.",
+      "category": "Direitos do Consumidor",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-01",
+      "statement": "Em garrafas fechadas de bebidas legais não existe espaço entre as partes superior e inferior da tampa.",
+      "isTrue": true,
+      "explanation": "É o erro nº 1 da cartilha. As tampas legais têm logomarcas e artes com impressão perfeita. Desconfie de lacres imperfeitos, com borrões ou vazamentos.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-02",
+      "statement": "Se a garrafa não tem dosador, a bebida é falsificada.",
+      "isTrue": false,
+      "explanation": "A ausência do dosador não indica nada: há marcas que não o possuem, e mesmo as que possuem podem ser vendidas sem o dispositivo, como em lojas duty free.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-03",
+      "statement": "Bebidas destiladas importadas devem trazer selo IPI no topo da tampa, fabricado em papel-moeda.",
+      "isTrue": true,
+      "explanation": "O selo é feito em papel-moeda e tem impressão de alta qualidade. É um dos pontos a conferir antes de comprar.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-04",
+      "statement": "Garrafas de um mesmo rótulo, alinhadas lado a lado, devem conter a mesma quantidade de líquido.",
+      "isTrue": true,
+      "explanation": "Existe um padrão no nível de enchimento, conforme consta do rótulo. Diferença de nível entre garrafas iguais é sinal de alerta.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-05",
+      "statement": "É normal encontrar detritos ou corpos estranhos no líquido de uma bebida destilada legal.",
+      "isTrue": false,
+      "explanation": "Bebidas destiladas não possuem detritos nem corpos estranhos. A exceção são as bebidas mistas ou compostas, em que há mistura de substâncias após a destilação e a filtragem.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-06",
+      "statement": "O contrarrótulo deve sempre estar em português e trazer o número de registro da bebida no MAPA.",
+      "isTrue": true,
+      "explanation": "MAPA é o Ministério da Agricultura, Pecuária e Abastecimento. Contrarrótulo em outro idioma, sem o registro, é sinal de produto irregular.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-07",
+      "statement": "Pequenos erros de grafia no rótulo são comuns em bebidas importadas originais.",
+      "isTrue": false,
+      "explanation": "Não há erros de grafia nos rótulos originais. Desconfie também de rótulos desgastados ou cuja impressão borra ao ser umedecida.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-08",
+      "statement": "Falsificadores costumam reutilizar garrafas de vidro originais descartadas.",
+      "isTrue": true,
+      "explanation": "As bebidas falsificadas normalmente usam garrafas originais vazias que foram descartadas e chegaram às mãos dos criminosos, depois envasadas com líquido adulterado.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-09",
+      "statement": "Rasgar o rótulo e o contrarrótulo antes de descartar a garrafa ajuda a combater a falsificação.",
+      "isTrue": true,
+      "explanation": "É a dica central da cartilha para o consumidor: descartar adequadamente a garrafa de vidro para que ela não caia na mão de falsificadores.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-10",
+      "statement": "Na hora de descartar, as tampas devem ir junto com as garrafas no coletor de vidro.",
+      "isTrue": false,
+      "explanation": "A orientação é nunca descartar as tampas junto com as garrafas. O coletor é para vidro apenas.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-11",
+      "statement": "Preço muito abaixo da média de mercado é um dos principais sinais de bebida ilegal.",
+      "isTrue": true,
+      "explanation": "O preço reduzido é justamente o grande chamariz das bebidas ilegais. O \"precinho\" muitas vezes significa \"sem garantias\".",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-12",
+      "statement": "As bebidas alcoólicas legais seguem um padrão de qualidade e identidade controlado pelo Ministério da Agricultura e pela Vigilância Sanitária.",
+      "isTrue": true,
+      "explanation": "O controle existe por um motivo simples: o consumidor ingere o produto. Por isso a procedência e a composição do líquido importam. As bebidas ilegais estão fora desse controle.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-13",
+      "statement": "Marcas de reutilização, riscos e arranhões na garrafa de vidro são aceitáveis em bebidas legais.",
+      "isTrue": false,
+      "explanation": "A bebida legal apresenta garrafa de vidro de qualidade, sem riscos, arranhões ou marcas de reutilização. Desconfie de embalagem de vidro em más condições.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-14",
+      "statement": "Comprar bebida pela internet é seguro desde que o anúncio tenha fotos do produto original.",
+      "isTrue": false,
+      "explanation": "Fotos não garantem nada. A orientação é dar preferência a vendedores com ótima reputação em plataformas conhecidas, que respeitem os direitos do consumidor.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    },
+    {
+      "id": "beb-15",
+      "statement": "Os sete pontos a conferir na cartilha são: tampa, líquido, rótulos, garrafa de vidro, preço, aparência e local de compra.",
+      "isTrue": true,
+      "explanation": "São os \"7 Erros das Bebidas Ilegais\", material da Abrabe em parceria com a SEDCON e o PROCON-RJ.",
+      "category": "Bebidas Ilegais",
+      "imageKey": ""
+    }
+  ]
+}

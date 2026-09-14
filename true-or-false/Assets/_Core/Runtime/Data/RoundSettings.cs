@@ -10,7 +10,19 @@ namespace Suricatus.TrueOrFalse.Core
     public struct RoundSettings
     {
         public int questionsPerRound;
+
+        /// <summary>Tempo base de cada pergunta. 0 ou menos desliga o cronometro da rodada inteira.</summary>
         public float secondsPerQuestion;
+
+        /// <summary>
+        /// Segundos somados ao tempo base a cada 100 caracteres do enunciado, para que
+        /// perguntas longas ganhem mais tempo de leitura. 0 mantem o tempo igual para todas.
+        /// </summary>
+        public float extraSecondsPer100Characters;
+
+        /// <summary>Teto do tempo calculado pelo tamanho. 0 desliga o teto.</summary>
+        public float maxSecondsPerQuestion;
+
         public float feedbackSeconds;
 
         public int pointsPerCorrect;
@@ -26,6 +38,8 @@ namespace Suricatus.TrueOrFalse.Core
         {
             questionsPerRound = 10,
             secondsPerQuestion = 10f,
+            extraSecondsPer100Characters = 0f,
+            maxSecondsPerQuestion = 0f,
             feedbackSeconds = 2f,
             pointsPerCorrect = 100,
             pointsPerWrong = 0,

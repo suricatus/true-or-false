@@ -24,6 +24,7 @@ namespace Suricatus.TrueOrFalse.Presentation
         public TMP_FontAsset bodyFont;
 
         public AttractTheme attract = new AttractTheme();
+        public TopicTheme topics = new TopicTheme();
         public QuestionTheme question = new QuestionTheme();
         public FeedbackTheme feedback = new FeedbackTheme();
         public ResultTheme result = new ResultTheme();
@@ -57,6 +58,55 @@ namespace Suricatus.TrueOrFalse.Presentation
             public Sprite background;
             [TextArea] public string title = "VERDADEIRO OU FALSO?";
             [TextArea] public string callToAction = "TOQUE NA TELA PARA INICIAR";
+        }
+
+        [Serializable]
+        public class TopicTheme
+        {
+            public Sprite background;
+            [TextArea] public string title = "ESCOLHA UM ASSUNTO";
+            [TextArea] public string callToAction = "";
+
+            [Header("Botao de todos os assuntos")]
+            [Tooltip("Oferece uma opcao extra que sorteia perguntas de todos os assuntos juntos.")]
+            public bool showAllTopics = false;
+            public string allTopicsLabel = "TODOS OS ASSUNTOS";
+
+            [Header("Aparencia por assunto")]
+            [Tooltip("Um item por assunto. 'Key' precisa ser IGUAL ao campo 'category' do JSON de perguntas. " +
+                     "Assunto sem item aqui aparece com o proprio nome da categoria e com a aparencia " +
+                     "do botao modelo — ou seja, preencher isto e opcional.")]
+            public TopicStyle[] styles = Array.Empty<TopicStyle>();
+
+            /// <summary>Estilo cadastrado para a categoria, ou null quando ela nao tem item no tema.</summary>
+            public TopicStyle Resolve(string category)
+            {
+                if (string.IsNullOrEmpty(category) || styles == null) return null;
+                for (int i = 0; i < styles.Length; i++)
+                {
+                    if (styles[i] != null &&
+                        string.Equals(styles[i].key, category, StringComparison.OrdinalIgnoreCase))
+                        return styles[i];
+                }
+                return null;
+            }
+        }
+
+        [Serializable]
+        public class TopicStyle
+        {
+            [Tooltip("Mesmo valor do campo 'category' no JSON de perguntas.")]
+            public string key;
+
+            [Tooltip("Nome exibido no botao. Vazio = usa o proprio 'category' do JSON.")]
+            public string label;
+
+            [Tooltip("Icone do assunto. Vai para o filho do botao com o nome configurado no painel " +
+                     "(por padrao, 'Icon').")]
+            public Sprite sprite;
+
+            [Tooltip("Cor do botao deste assunto. Alfa 0 mantem a cor que veio do botao modelo.")]
+            public Color color = new Color(1f, 1f, 1f, 0f);
         }
 
         [Serializable]
@@ -123,6 +173,19 @@ namespace Suricatus.TrueOrFalse.Presentation
             public Color timerUrgentColor = new Color(0.90f, 0.20f, 0.20f);
             [Tooltip("Segundos restantes a partir dos quais o cronometro fica urgente.")]
             [Min(0f)] public float urgentThresholdSeconds = 3f;
+
+            [Header("Pulsacao do cronometro")]
+            [Tooltip("Faz o cronometro pulsar a cada segundo que passa.")]
+            public bool timerPulse = true;
+            [Tooltip("Escala no pico da pulsacao, fora da reta final. 1 = nao cresce.")]
+            [Min(1f)] public float timerPulseScale = 1.08f;
+            [Tooltip("Escala no pico da pulsacao no ultimo segundo. Na reta final a pulsacao " +
+                     "cresce de 'Timer Pulse Scale' ate este valor, segundo a segundo.")]
+            [Min(1f)] public float timerUrgentPulseScale = 1.3f;
+            [Tooltip("Duracao de cada pulsacao, em segundos. Mantenha abaixo de 1 para caber no segundo.")]
+            [Range(0.05f, 1f)] public float timerPulseDuration = 0.3f;
+            [Tooltip("Na reta final a pulsacao vira uma batida dupla, como um coracao acelerado.")]
+            public bool timerUrgentHeartbeat = true;
         }
 
         [Serializable]

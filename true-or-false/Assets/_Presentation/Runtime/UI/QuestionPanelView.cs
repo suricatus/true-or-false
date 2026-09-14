@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DG.Tweening;
 using Suricatus.TrueOrFalse.Core;
 using TMPro;
 using UnityEngine;
@@ -26,6 +27,8 @@ namespace Suricatus.TrueOrFalse.Presentation
         [SerializeField] private TMP_Text timerText;
         [Tooltip("Objeto do cronometro inteiro, escondido quando a rodada nao tem tempo.")]
         [SerializeField] private GameObject timerRoot;
+        [Tooltip("O que pulsa a cada segundo. Se vazio, usa o Timer Root; sem ele, o Timer Text.")]
+        [SerializeField] private Transform timerPulseTarget;
 
         [Header("Pontuacao")]
         [SerializeField] private TMP_Text scoreText;
@@ -42,17 +45,30 @@ namespace Suricatus.TrueOrFalse.Presentation
 
         private Coroutine _blink;
 
+        private Tween _pulse;
+        private Vector3 _pulseBaseScale = Vector3.one;
+        // Ultimo segundo inteiro exibido. NoSecond = pergunta recem-apresentada, ainda sem referencia.
+        private const int NoSecond = int.MinValue;
+        private int _lastSecond = NoSecond;
+
         protected override void Initialize()
         {
             trueButton.Cache();
             falseButton.Cache();
 
+            if (timerPulseTarget == null)
+                timerPulseTarget = timerRoot != null ? timerRoot.transform : timerText != null ? timerText.transform : null;
+            if (timerPulseTarget != null) _pulseBaseScale = timerPulseTarget.localScale;
+
             if (trueButton.button != null) trueButton.button.onClick.AddListener(OnTrueClicked);
             if (falseButton.button != null) falseButton.button.onClick.AddListener(OnFalseClicked);
         }
 
+        private void OnDisable() => StopPulse();
+
         private void OnDestroy()
         {
+            StopPulse();
             if (trueButton.button != null) trueButton.button.onClick.RemoveListener(OnTrueClicked);
             if (falseButton.button != null) falseButton.button.onClick.RemoveListener(OnFalseClicked);
         }
@@ -81,6 +97,8 @@ namespace Suricatus.TrueOrFalse.Presentation
         {
             if (Theme == null) return;
             StopBlink();
+            StopPulse();
+            _lastSecond = NoSecond;
 
             var theme = Theme.question;
             trueButton.Unlock(theme);
@@ -118,15 +136,72 @@ namespace Suricatus.TrueOrFalse.Presentation
                 timerFill.fillAmount = secondsTotal <= 0f ? 1f : Mathf.Clamp01(secondsLeft / secondsTotal);
             }
 
+            // Arredonda para cima: o jogador ve "1" enquanto ainda ha tempo, e nunca "0" jogavel.
+            int display = Mathf.Max(0, Mathf.CeilToInt(secondsLeft));
+
             if (timerText != null)
             {
-                // Arredonda para cima: o jogador ve "1" enquanto ainda ha tempo, e nunca "0" jogavel.
-                int display = Mathf.Max(0, Mathf.CeilToInt(secondsLeft));
                 timerText.text = string.Format(theme.timerFormat, display);
                 timerText.color = secondsLeft <= theme.urgentThresholdSeconds
                     ? theme.timerUrgentColor
                     : theme.timerNormalColor;
             }
+
+            // Pulsa quando o numero muda. O primeiro tick de cada pergunta so marca a referencia,
+            // e o zero fica de fora: nele o tempo ja esgotou e a tela passa para o suspense.
+            if (display < _lastSecond && display > 0) Pulse(display, theme);
+            _lastSecond = display;
+        }
+
+        /// <summary>
+        /// Uma batida no cronometro. Fora da reta final e discreta; dentro dela cresce a cada
+        /// segundo e, se o tema pedir, vira batida dupla — a pressao aumenta junto com o numero caindo.
+        /// </summary>
+        private void Pulse(int display, ThemeConfig.QuestionTheme theme)
+        {
+            if (!theme.timerPulse || timerPulseTarget == null) return;
+            StopPulse();
+
+            bool urgent = display <= theme.urgentThresholdSeconds;
+            float scale = theme.timerPulseScale;
+            if (urgent)
+            {
+                // Com limite 3: o "3" bate a 1/3 do caminho, o "2" a 2/3 e o "1" no maximo.
+                float threshold = Mathf.Max(1f, Mathf.Ceil(theme.urgentThresholdSeconds));
+                float depth = Mathf.Clamp01((threshold - display + 1f) / threshold);
+                scale = Mathf.Lerp(theme.timerPulseScale, theme.timerUrgentPulseScale, depth);
+            }
+
+            Vector3 peak = _pulseBaseScale * scale;
+            float duration = theme.timerPulseDuration;
+            var target = timerPulseTarget;
+            var sequence = DOTween.Sequence();
+
+            if (urgent && theme.timerUrgentHeartbeat)
+            {
+                // "Tum-tum": a segunda batida e mais fraca e fecha dentro da mesma duracao.
+                Vector3 echo = Vector3.Lerp(_pulseBaseScale, peak, 0.6f);
+                sequence.Append(target.DOScale(peak, duration * 0.2f).SetEase(Ease.OutQuad))
+                        .Append(target.DOScale(_pulseBaseScale, duration * 0.2f).SetEase(Ease.InQuad))
+                        .Append(target.DOScale(echo, duration * 0.2f).SetEase(Ease.OutQuad))
+                        .Append(target.DOScale(_pulseBaseScale, duration * 0.4f).SetEase(Ease.InOutQuad));
+            }
+            else
+            {
+                sequence.Append(target.DOScale(peak, duration * 0.35f).SetEase(Ease.OutQuad))
+                        .Append(target.DOScale(_pulseBaseScale, duration * 0.65f).SetEase(Ease.InOutQuad));
+            }
+
+            // Sem essa limpeza, uma referencia velha (o DOTween recicla tweens) poderia matar outro tween.
+            _pulse = sequence.OnKill(() => { if (_pulse == sequence) _pulse = null; });
+        }
+
+        /// <summary>Interrompe a pulsacao e devolve o cronometro ao tamanho original.</summary>
+        private void StopPulse()
+        {
+            _pulse?.Kill();
+            _pulse = null;
+            if (timerPulseTarget != null) timerPulseTarget.localScale = _pulseBaseScale;
         }
 
         /// <summary>
@@ -136,6 +211,7 @@ namespace Suricatus.TrueOrFalse.Presentation
         public void LockAndHighlight(AnswerOutcome outcome)
         {
             if (Theme == null) return;
+            StopPulse();
             var theme = Theme.question;
             trueButton.Lock(theme);
             falseButton.Lock(theme);
